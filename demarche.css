@@ -31,7 +31,7 @@ img{
     
     box-sizing: border-box;
    margin: auto;
-   margin-bottom: 20%;
+   margin-bottom: au;
 
    
     
@@ -83,7 +83,7 @@ img{
     width: 100%;
     position: absolute;
     float: right;
-    animation: rotar 15s infinite linear;
+    animation: rotar 20s infinite linear;
     transform-style: preserve-3d;
   }
   
@@ -132,8 +132,10 @@ img{
   .content-carrousel img {
     image-rendering: auto;
     transition: all 300ms;
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 150%;
+    margin-left: auto;
+    margin-top: auto;
   }
   
   .content-carrousel img:hover {
@@ -147,6 +149,11 @@ img{
     } to {
       transform: rotateY(360deg);
     }
+  }
+
+  p{
+    background-color: deepskyblue;
+    b
   }
 
  
