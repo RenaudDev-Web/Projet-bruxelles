@@ -1,0 +1,128 @@
+h2 {
+    background: rgba(88, 80, 80, 0.95);
+    width: 30%;
+    min-height: 300%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 15%;
+    box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.260);
+    text-align: center; 
+}
+/* ***************FOOTER***************** */
+footer{
+    background-color:#212529;;
+    color: #fffff8;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+form{
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button{
+    border: none;
+    width: 55%;
+    padding: 15px, 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 8px;
+}
+textarea{
+    height: 120px;
+}
+button{
+    font-size: 1.5em;
+    background-color: #FFFAE1;
+}
+button:hover{
+    background-color: #e55039;
+    color: #FFFAE1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+p{
+    text-align: center;
+    color: rgb(241, 239, 239);
+
+}
+
+.demandecontainer{
+    color: #ffe3e1fa;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+.left{
+    flex-basis: 40%
+}
+.right h2{
+    text-align: center;
+    font-size: 5em;
+    vertical-align: top;
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+.right{
+    flex-basis: 58%;
+    padding: 0 1% 0 0.5%;
+    line-height: 180%;
+}
+.right p{
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 0.5%;
+}
+.right form{
+    background-color: #5f5a5a ;
+    margin: auto;
+    width: 96.5%;
+    padding: 0 2% 0 2%;
+    color: #f9f9f9;
+    line-height: 220%;
+}
+.label {
+    text-align: left;
+    width: 50%;
+}
+.input {
+    width: 100%;
+    clear: both;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+}
+button {
+    color: #f9f9f9;
+    width: 100%;
+    margin: auto;
+    border: none;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.right{
+    flex-basis: 100%;
+   }
+   .left{
+    flex-basis: 100%;
+   }
+   .left img{
+    width: 100%;
+   }
+   .right h2{
+    padding-top: 10%;
+   }
+   #envoie{
+    margin-top: 2%;
+    margin-bottom: 2%;
+   }
+   #eff{
+    margin-top: 1%;
+    margin-bottom: 3%;
+   }
+
+ 
