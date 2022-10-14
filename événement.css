@@ -4,7 +4,8 @@ body{
 }
 
 h1{
-  text-indent: 10%;
+  text-indent: 15%;
+  text-transform: uppercase;
 }
 
 .select{
@@ -28,14 +29,20 @@ h1{
   height: auto;
   }
 
+  .image1:hover{
+    opacity: 0.75;
+  }
+
 .image2{
-  width: 30em;
   height: auto;
+  width: 30em;
 }
 
+.image2:hover{
+  opacity: 0.75;
+}
 
-
-.p{
+main{
   display: flex;
   padding-top: 2em;
   gap: 14em;
@@ -44,12 +51,19 @@ h1{
   padding-left: 10%;
 }
 
-#p1{
-  width: 85%;
+.italique{
+  font-style: italic;
 }
 
- #p2{
-padding-left: 10%;
-padding-right: 5%;
+#p1{
+  width: 70%;
+}
+
+.parade{
+  padding-right: 20%;
+}
+
+#Zinneke{
+  width: 160%;
 }
 
