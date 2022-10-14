@@ -1,3 +1,55 @@
-h1{
-  text-indent: 30%;
+body{
+  margin-left: 3%;
+  margin-right: 3%;
 }
+
+h1{
+  text-indent: 10%;
+}
+
+.select{
+  text-indent: 15%;
+  padding-bottom: 5em;
+}
+
+.logo{
+  width: 15%;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content:space-around;
+}
+
+.image1{
+  width: 30em;
+  height: auto;
+  }
+
+.image2{
+  width: 30em;
+  height: auto;
+}
+
+
+
+.p{
+  display: flex;
+  padding-top: 2em;
+  gap: 14em;
+  width: 87%;
+  padding-right: 5%;
+  padding-left: 10%;
+}
+
+#p1{
+  width: 85%;
+}
+
+ #p2{
+padding-left: 10%;
+padding-right: 5%;
+}
+
