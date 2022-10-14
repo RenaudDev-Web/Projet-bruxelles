@@ -1,0 +1,65 @@
+main {
+    background: rgba(245, 233, 233, 0.95);
+    width: 30%;
+    min-height: 250%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 15%;
+    box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.260);
+    text-align: center;
+    
+}
+h1{
+    padding: 10%;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+.container form textarea {
+    width: 600px;
+    resize: none;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+form{
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button{
+    border: none;
+    width: 55%;
+    padding: 15px, 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 8px;
+}
+textarea{
+    height: 120px;
+}
+button{
+    font-size: 1.5em;
+    background-color: #FFFAE1;
+    border: 3px black solid;
+}
+button:hover{
+    background-color: #e55039;
+    color: #FFFAE1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.bordure{
+   border: 3px black solid;
+   width: 400px;
+
+}
+p{
+    text-align: center;
+}
+
+ 
