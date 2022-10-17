@@ -1,3 +1,69 @@
-h1{
-  text-indent: 30%;
+body{
+  margin-left: 3%;
+  margin-right: 3%;
 }
+
+h1{
+  text-indent: 15%;
+  text-transform: uppercase;
+}
+
+.select{
+  text-indent: 15%;
+  padding-bottom: 5em;
+}
+
+.logo{
+  width: 15%;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content:space-around;
+}
+
+.image1{
+  width: 30em;
+  height: auto;
+  }
+
+  .image1:hover{
+    opacity: 0.75;
+  }
+
+.image2{
+  height: auto;
+  width: 30em;
+}
+
+.image2:hover{
+  opacity: 0.75;
+}
+
+main{
+  display: flex;
+  padding-top: 2em;
+  gap: 14em;
+  width: 87%;
+  padding-right: 5%;
+  padding-left: 10%;
+}
+
+.italique{
+  font-style: italic;
+}
+
+#p1{
+  width: 70%;
+}
+
+.parade{
+  padding-right: 20%;
+}
+
+#Zinneke{
+  width: 160%;
+}
+
