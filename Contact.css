@@ -34,7 +34,7 @@ h2{
     padding-bottom: 0.5%;
 }
 .gauche form{
-    background-color: #303030 ;
+    background-color: #000000 ;
     margin: auto;
     width: 96.5%;
     padding: 0 2% 0 2%;
@@ -69,11 +69,38 @@ button {
 }
 .wrap{
     display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 1%;
 }
 img{
-margin: 0 auto;
-padding: 10%;
-;
-}
+    margin-top: 369px;
+    padding:left;
+    
 
+}
+  
+  a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: rgb(250, 248, 248);
+  }
+  
+  a:link, a:visited, a:focus {
+    background: rgb(100, 100, 98);
+  }
+  
+  a:hover {
+    background: rgb(100, 100, 98);
+  }
+  img{
+    background-image: medias/;
+  }
+  
+  
  
