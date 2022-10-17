@@ -1,45 +1,39 @@
 main{
     font-family: 'Roboto', sans-serif;
-    color:#7e7e7e ;
-
+    color:#0c0c0c ;
 }
 h1{
-color: #31455D;
+color:  #31455D;
 }
 
 h2{
     color:#31455D ;
 }
-.gauche{
+.centre{
     width: 50%;
+
 }
-.droite{
-    width: 50%;
-}
-.droite h2{
-    text-align: center;
-    font-size: 5em;
-    vertical-align: top;
-    padding-bottom: 4%;
-    padding-top: 2%;
-}
-.gauche{
+.centre{
     flex-basis: 58%;
     padding: 0 1% 0 0.5%;
     line-height: 180%;
-}
-.droite p{
-    font-size: 1.2em;
+    margin: 0 auto;
     text-align: center;
-    padding-bottom: 0.5%;
 }
 .gauche form{
-    background-color: #000000 ;
-    margin: auto;
-    width: 96.5%;
-    padding: 0 2% 0 2%;
-    color: #f9f9f9;
+    padding: 30px;
+    color: #f5eeee;
     line-height: 220%;
+    background-color: #31455D;
+}
+.gauche {
+    width: 40%;
+}
+.droite {
+    width: 40%;
+    background: url('medias/mairie (2).jpg') no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 .label {
     text-align: left;
@@ -72,35 +66,36 @@ button {
     margin-left: 5%;
     margin-right: 5%;
     gap: 1%;
-}
-img{
-    margin-top: 369px;
-    padding:left;
-    
-
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
 }
   
   a {
     outline: none;
     text-decoration: none;
     display: inline-block;
-    width: 19.5%;
-    margin-right: 0.625%;
     text-align: center;
-    line-height: 3;
     color: rgb(250, 248, 248);
+    padding: 10px 15px;
+    margin: 5px
   }
   
   a:link, a:visited, a:focus {
-    background: rgb(100, 100, 98);
+    background: #31455D;
   }
   
   a:hover {
     background: rgb(100, 100, 98);
   }
-  img{
-    background-image: medias/;
-  }
+  body {
+    background-size: cover;
+    background-blend-mode: darken;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    padding: 0;
+   }
+
   
   
  
