@@ -1,0 +1,19 @@
+.footerflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footeradresse{
+    width: 50%;
+    text-align: center;
+}
+
+.footeradresse p{
+    
+  text-align: left;  
+}
+
+h2{
+    font-size: 2.5em;
+}
