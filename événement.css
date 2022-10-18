@@ -1,10 +1,13 @@
 body{
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
+/*Evenements*/
+
 h1{
-  text-indent: 10%;
+  text-indent: 15%;
+  text-transform: uppercase;
 }
 
 .select{
@@ -16,40 +19,231 @@ h1{
   width: 15%;
 }
 
-.flex{
+.flex, .flex1{
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 1em;
-  justify-content:space-around;
+  text-align: center;
+  margin-bottom: 3%;
 }
 
-.image1{
+
+.image1, .image3{
   width: 30em;
   height: auto;
+  padding-top: 0.5em;
   }
 
-.image2{
-  width: 30em;
+  .image3{
+    height: 35vh;
+  }
+
+  .image1:hover, .image3:hover{
+    opacity: 0.75;
+  }
+
+.image2, .image4{
   height: auto;
+  width: 30em;
+  padding-top: 0.5em;
+}
+.image4{
+  height: 35vh;
 }
 
+.image2:hover, .image4:hover{
+  opacity: 0.75;
+}
 
-
-.p{
-  display: flex;
-  padding-top: 2em;
+.p5,.p6{
+  padding-top: 1.5em;
   gap: 14em;
   width: 87%;
   padding-right: 5%;
-  padding-left: 10%;
 }
 
-#p1{
-  width: 85%;
+.italique{
+  font-style: italic;
+  text-align: left;
 }
 
- #p2{
-padding-left: 10%;
-padding-right: 5%;
+h3{
+  text-decoration: none;
+  color: black;
+}
+
+.texte, .texte1{
+padding-left: 15%;
+}
+
+
+.texte h3, .texte1 h3{
+  text-align: left;
+}
+
+#p1, #p2{
+  width: 100%;
+  text-align: left;
+}
+
+.parade{
+  padding-right: 20%;
+  padding-left: 15%;
+  text-align: left;
+  width: 82%;
+}
+
+.imagetexte, .imagetexte1{
+  flex: 1;
+  border: 1px dotted;
+  min-height: 68vh;
+  background-color: #F5F5F5;
+  box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+}
+
+.imagetexte1{
+  min-height: 72vh;
+}
+
+.image2texte, .image3texte{
+  flex: 1;
+  border: 1px dotted;
+  min-height: 68vh;
+  background-color: #f5F5F5;
+  box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+}
+
+.image3texte{
+  min-height: 72vh;
+}
+
+.positionning{
+  position: relative;
+  left: 46%;
+  top: 1.4em;
+}
+
+.positionning1{
+  position: relative;
+  left: 81%;
+  top: 2.5em;
+}
+
+a.button{
+ background-color: #fbb52D;
+ color: #fff;
+ font-family: Trebuchet MS;
+ font-size: 15px;
+ text-decoration: none;
+ padding: 14px 15px;
+ border: 0px solid #000;
+ border-radius: 10px;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 30%;
+}
+
+.fleche{
+  width: 15%;
+  margin-left: 10px;
+  border-radius: 100%;
+}
+
+.positionning2{
+    position: relative;
+    left: 46%;
+    top: 1.4em;
+}
+
+a.button1{
+  background-color: #fbb52D;
+  color: #fff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+}
+
+.positionning3{
+  position: relative;
+  left: 82%;
+  top: 1.5em;
+}
+
+a.button3{
+  background-color: #fbb52D;
+  color: #fff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+ }
+
+ a.button4{
+  background-color: #fbb52D;
+  color: #fff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+ }
+
+ /*Actualités*/
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px){
+
+
+
 }
 
