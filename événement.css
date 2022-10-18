@@ -1,6 +1,7 @@
 body{
   margin-left: 8%;
   margin-right: 8%;
+  font-family: 'Roboto Slab', serif;
 }
 
 /*Evenements*/
@@ -8,6 +9,7 @@ body{
 h1{
   text-indent: 15%;
   text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
 }
 
 .select{
@@ -121,7 +123,6 @@ padding-left: 15%;
 .positionning{
   position: relative;
   left: 46%;
-  top: 1.4em;
 }
 
 .positionning1{
@@ -154,7 +155,7 @@ a.button{
 .positionning2{
     position: relative;
     left: 46%;
-    top: 1.4em;
+    top: 1em;
 }
 
 a.button1{
@@ -175,7 +176,7 @@ a.button1{
 .positionning3{
   position: relative;
   left: 82%;
-  top: 1.5em;
+  top: 1em;
 }
 
 a.button3{
@@ -209,6 +210,80 @@ a.button3{
  }
 
  /*Actualités*/
+
+#actualitéh2{
+  text-align: center;
+}
+
+ /*Carousel*/
+
+ .custom-slider {
+  display: none;
+}
+
+.slide-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;        
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.6s ease;
+}
+
+.prev{
+  left: 15px;
+}
+
+.next{
+  right: 15px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.slide-text {
+  position: absolute;
+  background-color: #fbb52D;
+  font-size: 15px;
+  padding: 15px;
+  padding-right: 17px;
+  bottom: 15px;
+  max-width: 800px;
+  width: 96%;
+  text-align: center;
+}
+
+.slide-img{ 
+  width: 100%; 
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+ }
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
 
  
 

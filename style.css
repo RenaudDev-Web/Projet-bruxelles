@@ -9,9 +9,8 @@ body{
 
 /* ==== HEADER ===== */
 
-.sticky {
+header.sticky {
 
-    position: sticky;
     width: 100%;
     background: white;
 }
@@ -21,7 +20,7 @@ body{
     max-width: 100%;
     height: 80px;
     padding: 10px 0;
-    box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
+    /* box-shadow: 0px 2px 3px rgb(0 0 0 / 10%); */
 }
 
 .wrap {
@@ -117,6 +116,11 @@ li a:hover::before {
     text-decoration: none;
 }
 
+.icons a:hover {
+
+    color:#fbb52d;
+}
+
 
 /* === MAIN === */
 
@@ -171,7 +175,7 @@ section .bg-main {
     height: 30px;
     display: block;
     background-size: 20px;
-    background-image: url(/medias/search-512.webp);
+    /* background-image: url(/medias/search-512.webp); */
     /* transform: translateY(-50%); */
     background-position: center;
     background-size: cover;
@@ -181,6 +185,10 @@ section .bg-main {
     background-color: white;
     cursor: pointer;
 
+}
+
+#recherche .loupe img, a {
+    padding-right: 10px;
 }
 
 
@@ -194,9 +202,14 @@ label {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+
+}
+
+#services {
+
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
 
 }
 
@@ -204,16 +217,15 @@ label {
 
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 
 h2.titre-liens {
 
-    font-size: 40px;
+    font-size: 35px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .section-liens .services-clic {
@@ -321,4 +333,171 @@ a.services-clic:hover .picto {
     text-decoration: none;
     color: white;
     background-color: #fbb52d;
+}
+
+#bouton-services:hover {
+    
+    background-color: #31455d;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
+#actualites {
+
+    background-image: url(medias/hero-news.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.actualites {
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    width: 100%;
+
+}
+
+#bouton-actus {
+
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: #fbb52d;
+}
+
+#bouton-actus:hover {
+    
+    background-color: #31455d;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+
+.section-actus {
+
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px; */
+    
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+
+/* ==== Evenements ==== */
+
+
+.event-picto img {
+   width: 100%;
+}
+
+p.event-text {
+    text-align: left;
+    padding: 10px;
+}
+
+.event {
+    width: 25%;
+    padding: 1%;
+}
+
+
+a.event-link {
+        background-color: #31455d;
+        color: #fff;
+        font-family: Trebuchet MS;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 14px 15px;
+        border-radius: 10px;
+        /* display: inline-flex;
+        justify-content: center;
+        align-items: center; */
+        width: 70%;
+}
+
+
+
+
+
+
+
+/* ==== FOOTER ==== */
+
+footer{
+    font-family: 'Roboto Slab', serif;
+}
+
+.footerflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footeradresse{
+    
+    width: 50%;
+    background-color: #000;
+    color: white;
+    min-height: 30vh;
+    padding-bottom: 10px;
+}
+
+#footerh2{
+text-align: center;
+}
+
+.footerp{
+    text-align: center;
+}
+
+footer a{
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+}
+
+.footerbutton{
+    text-decoration: none;
+}
+
+.footerbutton1{
+    padding: 10px 50% 10px 14%;
+    margin-left: 20%;
+    cursor: pointer;
+    width: 20%;
+    height: 15%;
+}
+
+.footerbutton1:hover{
+opacity: 0.75;
+}
+
+.footerhoraire{
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    background-color:  #fbb52D;
+}
+
+.footercopyright{
+    text-align: center;
+    flex: 1;
 }
