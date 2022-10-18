@@ -3,6 +3,8 @@ body{
   margin-right: 8%;
 }
 
+/*Evenements*/
+
 h1{
   text-indent: 15%;
   text-transform: uppercase;
@@ -61,10 +63,6 @@ h1{
   padding-right: 5%;
 }
 
-.p6{
-  padding-bottom: 23px;
-}
-
 .italique{
   font-style: italic;
   text-align: left;
@@ -90,32 +88,46 @@ padding-left: 15%;
 }
 
 .parade{
-  padding-top: 1.5em;
   padding-right: 20%;
   padding-left: 15%;
   text-align: left;
+  width: 82%;
 }
 
 .imagetexte, .imagetexte1{
   flex: 1;
   border: 1px dotted;
-  min-height: 66vh;
+  min-height: 68vh;
   background-color: #F5F5F5;
   box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+}
+
+.imagetexte1{
+  min-height: 72vh;
 }
 
 .image2texte, .image3texte{
   flex: 1;
   border: 1px dotted;
-  min-height: 66vh;
+  min-height: 68vh;
   background-color: #f5F5F5;
   box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
 }
 
+.image3texte{
+  min-height: 72vh;
+}
+
+.positionning{
+  position: relative;
+  left: 46%;
+  top: 1.4em;
+}
+
 .positionning1{
   position: relative;
-  left: 85%;
-  top: 23px;
+  left: 81%;
+  top: 2.5em;
 }
 
 a.button{
@@ -139,10 +151,10 @@ a.button{
   border-radius: 100%;
 }
 
-
 .positionning2{
     position: relative;
     left: 46%;
+    top: 1.4em;
 }
 
 a.button1{
@@ -157,7 +169,13 @@ a.button1{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 31%;
+}
+
+.positionning3{
+  position: relative;
+  left: 82%;
+  top: 1.5em;
 }
 
 a.button3{
@@ -175,146 +193,7 @@ a.button3{
   width: 30%;
  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.flex{
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 1em;
-  text-align: center;
-}
-
-
-.image1{
-  width: 30em;
-  height: auto;
-  padding-top: 0.5em;
-  }
-
-  .image1:hover{
-    opacity: 0.75;
-  }
-
-.image2{
-  height: auto;
-  width: 30em;
-  padding-top: 0.5em;
-}
-
-.image2:hover{
-  opacity: 0.75;
-}
-
-.p5{
-  padding-top: 1.5em;
-  gap: 14em;
-  width: 87%;
-  padding-right: 5%;
-}
-
-.italique{
-  font-style: italic;
-  text-align: left;
-}
-
-h3{
-  text-decoration: none;
-  color: black;
-}
-
-.texte{
-padding-left: 15%;
-}
-
-
-.texte h3{
-  text-align: left;
-}
-
-#p1{
-  width: 100%;
-  text-align: left;
-}
-
-.parade{
-  padding-top: 1.5em;
-  padding-right: 20%;
-  padding-left: 15%;
-  text-align: left;
-}
-
-.imagetexte{
-  flex: 1;
-  border: 1px dotted;
-  min-height: 66vh;
-  background-color: #F5F5F5;
-  box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
-}
-
-.image2texte{
-  flex: 1;
-  border: 1px dotted;
-  min-height: 66vh;
-  background-color: #f5F5F5;
-  box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
-  
-}
-
-.positionning1{
-  position: relative;
-  left: 85%;
-  top: 23px;
-}
-
-a.button{
- background-color: #fbb52D;
- color: #fff;
- font-family: Trebuchet MS;
- font-size: 15px;
- text-decoration: none;
- padding: 14px 15px;
- border: 0px solid #000;
- border-radius: 10px;
- display: inline-flex;
- justify-content: center;
- align-items: center;
- width: 30%;
- margin-bottom: 10px;
- 
-}
-
-.fleche{
-  width: 15%;
-  margin-left: 10px;
-  border-radius: 100%;
-}
-
-
-.positionning2{
-    position: relative;
-    left: 46%;
-}
-
-a.button1{
+ a.button4{
   background-color: #fbb52D;
   color: #fff;
   font-family: Trebuchet MS;
@@ -326,8 +205,31 @@ a.button1{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 34%;
-} */
+  width: 31%;
+ }
+
+ /*Actualités*/
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
