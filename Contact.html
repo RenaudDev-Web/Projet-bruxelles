@@ -1,126 +1,141 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Contactez nous</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
 
-  <body>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Contactez nous</title>
+</head>
 
 
-    <header class="sticky">
 
-      <div id="head-wrap">
+<body>
+  <header class="sticky">
+    <div id="head-wrap">
+      <div class="wrap">
+        <a class="logo" href="index.html">
+          <img src="medias/logo_bx.png" alt="logo brussels">
+        </a>
+        <div class="bienvenue">
+          <h1>Bienvenue, Welkom, Welcome</h1>
+        </div>
+        <div class="icons">
+          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
 
-          <div class="wrap">
-
-              <a class="logo" href="index.html">
-
-                  <img src="medias/logo_bx.png" alt="logo brussels">
-
-              </a>
-
-              <div class="bienvenue">
-
-                  <h1>Bienvenue, Welkom, Welcome</h1>
-
-              </div>
-
-              <div class="icons">
-
-                  <a href="www.instagram.com" class="fa fa-instagram"></a>
-                  <a href="www.facebook.com" class="fa fa-facebook"></a>
-                  <a href="www.twitter.com" class="fa fa-twitter"></a>
-
-              </div>
-
-          </div>
+        </div>
 
       </div>
 
-      <nav class="navbar">
+    </div>
 
-          <ul>
-              <li><a href="#">La ville</a></li>
-              <li><a href="#">Actions et projets</a></li>
-              <li><a href="#">Brussels 2035</a></li>
-              <li><a href="#">Culture</a></li>
-              <li><a href="#">Participer</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul> 
+    <nav class="navbar">
+
+      <ul>
+        <li><a href="#">La ville</a></li>
+        <li><a href="#">Actions et projets</a></li>
+        <li><a href="#">Brussels 2035</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Participer</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
 
-      </nav>
+    </nav>
 
   </header>
 
-    <main>
-      <div class="wrap">
-        <div class="centre">
-          <h1>Nous contacter</h1>
-          <p>Vous avez plusieurs posibilité afin de nous contacter :</p>
-          <a href="tel:0253593017" class="info">Info Mairie</a>
-          <a href="mailto:BruxellesBE@mairie.eu" class="info">Adresse email Mairie</a>
-          <p> Vous pouvez également envoyer un courrier à l'adresse suivante :</p>
-          <p>
-            Hôtel de Ville Bruxelles,<br>
-            Place XXX <br>
-            00000 Bruxelles
-          </p>
+  <main>
+    <div class="wrap">
+      <div class="centre">
+        <h1>Nous contacter</h1>
+        <p>Vous avez plusieurs posibilité afin de nous contacter :</p>
+        <a href="tel:0253593017" class="info">Info Mairie</a>
+        <a href="mailto:BruxellesBE@mairie.eu" class="info">Adresse email Mairie</a>
+        <p> Vous pouvez également envoyer un courrier à l'adresse suivante :</p>
+        <p>
+          Hôtel de Ville Bruxelles,<br>
+          Place XXX <br>
+          00000 Bruxelles
+        </p>
+      </div>
+
+      <div class="centre">
+
+        <h2>Formulaire de contact</h2>
+
+        <p>
+          Pour toute réclamation ou demande spécifique, vous pouvez également nous contacter via le formulaire de
+          contact ci
+          dessous: </p>
+
+      </div>
+      <div class="gauche">
+        <form method="post">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" class="input" placeholder="Entrez votre prénom" maxlength="300">
+          <label for="name" class="label">Nom</label>
+          <input type="text" id="name" name="name" class="input" placeholder="Entrez votre nom" maxlength="300">
+          <label for="email" class="label">E-mail</label>
+          <input type="email" name="Email" id="email" class="input" placeholder="Entrez votre Email" required>
+          <label for="demande" class="input">Quel type de demande avez-vous ?</label>
+          <select name="role" id="demande" class="input">
+            <option value="0">Conseillers communaux</option>
+            <option value="1">Secrétaire communal</option>
+            <option value="2">Départements administratifs</option>
+          </select>
+          <label for="comment" class="label">Commentaires : </label>
+          <textarea name="comment" id="comment" class="input" cols="30" rows="10"></textarea>
+          <input id="envoie" type="submit" value="Envoyer" name="Envoyer">
+        </form>
+      </div>
+
+      <div class="droite">
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footerflex">
+
+      <div class="footeradresse">
+        <h2 id="footerh2">Adresse</h2>
+
+        <div class="footerp">
+          <p>Hotel de Ville-Grand-Place-1000 Bruxelles</p>
+          <p>Centre administratif-Boulevard Anspach 6-1000 Bruxelles</p>
+          <p>+32 2 279 23 43</p>
         </div>
 
-        <div class="centre">
-        
-          <h2>Formulaire de contact</h2>
-        
-          <p>
-            Pour toute réclamation ou demande spécifique, vous pouvez également nous contacter via le formulaire de contact ci
-            dessous: </p>
-        
-        </div>
-            <div class="gauche">
-              <form method="post">
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" class="input" placeholder="Entrez votre prénom" maxlength="300">
-                <label for="name" class="label">Nom</label>
-                <input type="text" id="name" name="name" class="input" placeholder="Entrez votre nom" maxlength="300">
-                <label for="email" class="label">E-mail</label>
-                <input type="email" name="Email" id="email" class="input" placeholder="Entrez votre Email" required>
-                <label for="demande" class="input">Quel type de demande avez-vous ?</label>
-                <select name="role" id="demande" class="input">
-                  <option value="0">Conseillers communaux</option>
-                  <option value="1">Secrétaire communal</option>
-                  <option value="2">Départements administratifs</option>
-                </select>
-                <label for="comment" class="label">Commentaires : </label>
-                <textarea name="comment" id="comment" class="input" cols="30" rows="10"></textarea>
-                <input id="envoie" type="submit" name="Envoyer">
-              </form>
-            </div>
-  
-            <div class="droite">
-           
-            </div>
       </div>
-    </main>
-    <footer>
-      <div>
-        <ul>
-          <li><a href="Mentions_legales.html">Mentions légales</a></li>
-          <li><a href="Cookie.html">Cookie</a></li>
-        </ul>
+
+      <div class="footerhoraire">
+        <h2>Horaires</h2>
+        <p>Lundi: 8h30-11h30 / 12h30-19h30</p>
+        <p>Mardi: 8h30-11h30 / 12h-16h30</p>
+        <p>Jeudi: 8h30-11h30 / 12h-16h30</p>
+        <p>Vendredi: 8h30-11h30 / 12h30-19h30</p>
       </div>
+
+      <div class="footercopyright">
+        <p>Copyright 2022 Ville de Bruxelles-Mentions légales</p>
+      </div>
+
+    </div>
+
+
+
   </footer>
-  </body>
+</body>
+
 </html>
