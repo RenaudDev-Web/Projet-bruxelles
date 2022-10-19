@@ -345,13 +345,17 @@ opacity: 0.75;
 
 /* ==== MEDIAS QUERIES ===== */
 
-@media screen and (max-width:480px) {
-  body {
-      padding-left: 0;
+@media screen and (max-width:490px) {
+  .droite{
+    display: none;
   }
-
-  main {
-      margin-top: 1em;
+  main .gauche{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main .centre{
+    width: 100%;
+    flex-basis: 100%;
   }
 } 
 
