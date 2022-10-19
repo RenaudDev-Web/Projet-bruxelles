@@ -1,101 +1,362 @@
-main{
-    font-family: 'Roboto', sans-serif;
-    color:#0c0c0c ;
-}
-h1{
-color:  #31455D;
+/* ==== Menu HEADER ===== */
+
+header .sticky {
+  position: sticky;
+  width: 100%;
+  background: white;
 }
 
-h2{
-    color:#31455D ;
+header #head-wrap {
+  max-width: 100%;
+  height: 80px;
+  padding: 10px 0;
+  box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
 }
-.centre{
-    width: 50%;
 
+header .wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
-.centre{
-    flex-basis: 58%;
-    padding: 0 1% 0 0.5%;
-    line-height: 180%;
-    margin: 0 auto;
-    text-align: center;
-}
-.gauche form{
-    padding: 30px;
-    color: #f5eeee;
-    line-height: 220%;
-    background-color: #31455D;
-}
-.gauche {
-    width: 40%;
-}
-.droite {
-    width: 40%;
-    background: url('medias/mairie (2).jpg') no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-.label {
-    text-align: left;
-    width: 50%;
-}
-.input {
-    width: 100%;
-    clear: both;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 1%;
-}
-button {
-    color: #f9f9f9;
-    width: 100%;
-    margin: auto;
-    border: none;
-    margin-top: 2%;
-    padding: 1%;
-}
-.mentions {
-    margin-top: 5%;
-    padding-top: 0;
-}
-.mentions p{
-    text-align: left;
-}
-.wrap{
-    display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-    gap: 1%;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    justify-content: center;
-}
-  
-  a {
-    outline: none;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    color: rgb(250, 248, 248);
-    padding: 10px 15px;
-    margin: 5px
-  }
-  
-  a:link, a:visited, a:focus {
-    background: #31455D;
-  }
-  
-  a:hover {
-    background: rgb(100, 100, 98);
-  }
-  body {
-    background-size: cover;
-    background-blend-mode: darken;
-    color: rgb(8, 8, 8);
-    font-weight: bold;
-    padding: 0;
-   }
 
-  
-  
+header .logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header .bienvenue {
+  flex: 1;
+  text-align: center;
+  border-left: 1px dotted#31455d;
+  border-right: 1px dotted #31455d;
+}
+
+header .navbar {
+  flex-basis: 100%;
+  padding-bottom: 0.1rem;
+  padding-top: 00.1rem;
+  justify-content: space-between;
+  background-color: #31455d;
+  text-align: center;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+header .navbar ul {
+  align-items: center;
+  list-style: none;
+}
+
+header .navbar li {
+  display: inline;
+  padding: 0 3% 0 3%;
+}
+
+header li span {
+  word-spacing: 2px;
+}
+
+header li a {
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+header li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform-origin: none;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+header li a:hover::before {
+  transform-origin: center;
+  transform: scaleX(1);
+}
+
+header .icons {
+  flex: 1;
+  text-align: center;
+  font-size: 2rem;
+}
+
+header .icons a {
+  color: #31455d;
+  text-decoration: none;
+}
+
+.icons {
+  flex: 1;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.icons a {
+  color: #31455d;
+  text-decoration: none;
+}
+
+.icons a:hover {
+
+  color:#fbb52d;
+}
+
+/* ====Fin Menu HEADER ===== */
+
  
+
+
+
+
+
+/* Menu  MAIN */
+
+main {
+  font-family: "Roboto", sans-serif;
+  color: #0c0c0c;
+  margin-bottom: 1%;
+  
+}
+
+main h1 {
+  color: #31455d;
+}
+
+main h2 {
+  color: #31455d;
+}
+
+main .centre {
+  width: 50%;
+  flex-basis: 58%;
+  padding: 0 1% 0 0.5%;
+  line-height: 180%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .gauche form {
+  padding: 30px;
+  color: #f5eeee;
+  line-height: 220%;
+  background-color: #31455d;
+}
+
+main .gauche {
+  width: 40%;
+}
+
+main .droite {
+  width: 40%;
+  background: url("medias/mairie2.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+main .label {
+  text-align: left;
+  width: 50%;
+}
+
+main .input {
+  width: 100%;
+  clear: both;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 1%;
+}
+
+main button {
+  color: #f9f9f9;
+  width: 100%;
+  margin: auto;
+  border: none;
+  margin-top: 2%;
+  padding: 1%;
+}
+
+main .mentions {
+  margin-top: 5%;
+  padding-top: 0;
+}
+
+main .mentions p {
+  text-align: left;
+}
+
+main .wrap {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  gap: 1%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: initial;
+}
+
+main a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: rgb(250, 248, 248);
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #31455d;
+}
+
+main .info:hover {
+  background: rgb(100, 100, 98);
+}
+
+body {
+    background-size: cover;
+  background-blend-mode: darken;
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+  margin: 0;
+}
+
+#envoie{
+  background-color:white ;
+  color: #31455d;
+  padding: 5px;
+  border: none;
+}
+
+/* ==== Fin Menu MAIN ===== */
+
+
+
+
+
+
+
+
+/*  Menu FOOTER */
+
+footer ul li a {
+  color: black;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer{
+  font-family: 'Roboto Slab', serif;
+}
+
+.footerflex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footeradresse{
+  
+  width: 50%;
+  background-color: #31455d;
+  color: white;
+  min-height: 30vh;
+  padding-bottom: 10px;
+}
+
+#footerh2{
+text-align: center;
+}
+
+.footerp{
+  text-align: center;
+}
+
+footer a{
+  margin: 0 auto;
+  display: block;
+  width: 20%;
+}
+
+.footerbutton{
+  text-decoration: none;
+}
+
+.footerbutton1{
+  padding: 10px 50% 10px 14%;
+  margin-left: 20%;
+  cursor: pointer;
+  width: 20%;
+  height: 15%;
+}
+
+.footerbutton1:hover{
+opacity: 0.75;
+}
+
+.footerhoraire{
+  text-align: center;
+  width: 50%;
+  align-items: center;
+  background-color: #31455d;
+  color: white;    
+}
+
+.footercopyright{
+  text-align: center;
+  flex: 1;
+  background-color:  #fbb52D;
+  color: white;
+}
+
+.cookie ul li a{
+  text-decoration: none;
+  text-align: center;
+}
+
+/* ==== Fin Menu FOOTER ===== */
+
+
+
+
+
+
+
+/* ==== MEDIAS QUERIES ===== */
+
+@media screen and (max-width:490px) {
+  .droite{
+    display: none;
+  }
+  main .gauche{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main .centre{
+    width: 100%;
+    flex-basis: 100%;
+  }
+} 
+
+/* ====FIN MEDIAS QUERIES ===== */
