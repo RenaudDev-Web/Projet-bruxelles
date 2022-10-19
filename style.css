@@ -437,7 +437,7 @@ a.event-link {
         justify-content: center;
         align-items: center; */
         width: 70%;
-        box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+        /* box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%); */
 
 }
 
@@ -477,6 +477,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    /* gap: 1px; */
 }
 
 .footeradresse{
@@ -488,7 +489,7 @@ footer{
     padding-bottom: 10px;
 }
 
-#footerh2{
+.footerh2{
 text-align: center;
 }
 
