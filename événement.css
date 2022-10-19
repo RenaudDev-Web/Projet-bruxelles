@@ -140,15 +140,25 @@ h1{
   width: 15%;
 } */
 
-.flex, .flex1{
+.flex{
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 3em;
+  text-align: center;
+  margin-bottom: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.flex1{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3em;
   text-align: center;
   margin-bottom: 3%;
 }
-
 
 .image1, .image3{
   width: 30em;
@@ -187,11 +197,12 @@ h1{
 .italique{
   font-style: italic;
   text-align: left;
+  color: white;
 }
 
 h3{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .texte, .texte1{
@@ -201,11 +212,13 @@ padding-left: 15%;
 
 .texte h3, .texte1 h3{
   text-align: left;
+  color: white;
 }
 
 #p1,#p2,#p3,#p4{
   width: 100%;
   text-align: left;
+  color: white;
 }
 
 .parade{
@@ -220,8 +233,9 @@ padding-left: 15%;
   position: relative;
   border: 1px dotted;
   min-height: 68vh;
-  background-color: #F5F5F5;
+  background-color: #303030;
   box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+  
 }
 
 .imagetexte1, .imagetexte3{
@@ -229,7 +243,7 @@ padding-left: 15%;
   position: relative;
   border: 1px dotted;
   min-height: 68vh;
-  background-color: #f5F5F5;
+  background-color: #303030;
   box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
 }
 
@@ -320,6 +334,7 @@ a.button3{
 #actualitéh2{
   text-align: center;
   margin-bottom: 4%;
+  font-size: 2em;
 }
 
  /*Carousel*/
