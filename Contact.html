@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 
-  <html lang="fr">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
 
-    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contactez nous</title>
+  </head>
 
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="contact.css">
-      <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-      <title>Contactez nous</title>
+  <body>
 
-    </head>
 
-    <body>  
-
-      <header>
-
-      </header>
-
-      <main>
-
-        <div class="wrap">
-
-          <div class="centre">
-            <h1>Nous contacter</h1>
-            <p> Vous avez plusieurs posibilité afin de nous contacter :</p>
-            <a href="tel:0253593017">Info Mairie</a>
-            <a href="mailto:BruxellesBE@mairie.eu">Adresse email Mairie</a>
-            <p>Vous pouvez également envoyer un courrier à l'adresse suivante :</p>
-            <p>Hôtel de Ville Bruxelles,<br>
-              Place 1000 <br>
-              Bruxelles
-          </div>
-
-          <div class="centre">
-            <h2>Formulaire de contact</h2>
-          
-            <p>Pour toute réclamation ou demande spécifique, vous pouvez également nous contacter via le formulaire de contact ci
-              dessous:</p>
-          </div>
+   <header class="sticky">
+      <div id="head-wrap">
+          <div class="wrap">
+              <a class="logo" href="index.html">
+                  <img src="medias/logo_bx.png" alt="logo brussels">
+              </a>
+              <div class="bienvenue">
+                  <h1>Bienvenue, Welkom, Welcome</h1>
+              </div>
+              <div class="icons">
+                  <a href="www.instagram.com" class="fa fa-instagram"></a>
+                  <a href="www.facebook.com" class="fa fa-facebook"></a>
+                  <a href="www.twitter.com" class="fa fa-twitter"></a>
+              </div>
+      </div>
 
               <div class="gauche">
             <form method="post">
@@ -61,14 +55,49 @@
               <input id="envoie" type="submit" name="Envoyer">
             </form>
           </div>
+
           <div class="droite">
          
           </div>
 
+  </header>
+
+    <main>
+      <div class="wrap">
+        <div class="centre">
+          <h1>Nous contacter</h1>
+          <p>Vous avez plusieurs posibilité afin de nous contacter :</p>
+          <a href="tel:0253593017" class="info">Info Mairie</a>
+          <a href="mailto:BruxellesBE@mairie.eu" class="info">Adresse email Mairie</a>
+          <p>
+            Vous pouvez également envoyer un courrier à l'adresse suivante :
+          </p>
+          <p>
+            Hôtel de Ville Bruxelles,<br />
+            Place XXX <br />
+            00000 Bruxelles
+          </p>
         </div>
 
-      </main>
-      
-    </body>
+        <div class="centre">
+          <h2>Formulaire de contact</h2>
 
-  </html>
+          <p>
+            Pour toute réclamation ou demande spécifique, vous pouvez également
+            nous contacter via le formulaire de contact ci dessous:
+          </p>
+        </div>
+
+        <div class="droite"></div>
+
+        <footer>
+            <div>
+              <ul>
+                <li><a href="Mentions_legales">Mentions légales</a></li>
+                <li><a href="#">Cookie</a></li>
+              </ul>
+            </div>
+        </footer>
+    </main>
+  </body>
+</html>
