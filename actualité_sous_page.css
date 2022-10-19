@@ -1,4 +1,28 @@
+body{
+    background: #9da7b33b;
+}
+
+
+
 .imagea{
     width: 30%;
     margin-left: 35%;
+    margin-bottom: 5%;
+}
+
+.fond_image{
+    background-color: #9da7b33b;
+}
+
+p{
+    
+margin: auto;
+}
+
+main{
+    border: 1px solid ;
+    width: 60%;
+    margin: 10px auto;
+    min-height: 300px;
+    padding: 2%;
 }
