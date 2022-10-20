@@ -1,0 +1,65 @@
+footer{
+    font-family: 'Roboto Slab', serif;
+}
+
+.footerflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footeradresse{
+    
+    width: 50%;
+    background-color: #31455d;
+    color: white;
+    min-height: 30vh;
+    padding-bottom: 10px;
+}
+
+#footerh2{
+text-align: center;
+}
+
+.footerp{
+    text-align: center;
+}
+
+footer a{
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+}
+
+.footerbutton{
+    text-decoration: none;
+}
+
+.footerbutton1{
+    padding: 10px 50% 10px 14%;
+    margin-left: 20%;
+    cursor: pointer;
+    width: 20%;
+    height: 15%;
+}
+
+.footerbutton1:hover{
+opacity: 0.75;
+}
+
+.footerhoraire{
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    background-color: #31455d;
+    color: white;    
+
+}
+
+.footercopyright{
+    text-align: center;
+    flex: 1;
+    background-color:  #fbb52D;
+    color: white;
+}

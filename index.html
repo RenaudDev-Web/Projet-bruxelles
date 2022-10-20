@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="fr">
 
     <head>
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <link rel="stylesheet" href="style.css">
 
         <title>Ville de Bruxelles Capitale</title>
@@ -19,17 +26,45 @@
 
             <div id="head-wrap">
 
-                <nav class="navbar">
+                <div class="wrap">
 
                     <a class="logo" href="index.html">
 
-                        <img src="medias/logo_bx.png" alt="logo brussels">
+                        <img class="img-logo" src="medias/logo_bx.png" alt="logo brussels">
 
                     </a>
 
-                </nav>
+                    <div class="bienvenue">
+
+                        <h1 class="h1-bienvenue">Bienvenue, Welkom, Welcome</h1>
+
+                    </div>
+
+                    <div class="icons">
+
+                        <a href="https://www.instagram.com/bxl_online/" class="fa fa-instagram"></a>
+                        <a href="https://www.facebook.com/BXLvilledebruxelles/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/VilleBruxelles" class="fa fa-twitter"></a>
+
+                    </div>
+
+                </div>
 
             </div>
+
+            <nav class="navbar">
+
+                <ul>
+                    <li><a href="#">La ville</a></li>
+                    <li><a href="#">Actions et projets</a></li>
+                    <li><a href="#">Brussels 2035</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Participer</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul> 
+
+
+            </nav>
 
 
 
@@ -38,16 +73,336 @@
 
         <main>
 
+            <section>
+
+                <h2 class="hidden">Recherche</h2>
+
+                <div class="bg-main">
+
+                    <div id="recherche">
+
+                        <form action="/recherche" method="get" class="seek">
+
+                            <label for="search">Recherche</label>
+
+                            <input type="text" name="search" id="search" placeholder="Votre recherche concerne ?">
+
+                            <a href="#" class="loupe"><img class="home-img" src="medias/search-512.webp" alt="loupe recherche"></a>
+                            <!-- <button type="submit" class="loupe"></button> -->
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="services">
+
+                <div class="section-liens">
+
+                    <h2 class="titre-liens">Nos services en 1 clic</h2>
+
+                    <div class="services">
+
+                        <a href="#" class="services-clic">
+
+                            <span class="picto">
+
+                                <img class="home-img" src="medias/icons/dossier.png" alt="icone-dossier">
+
+                            </span>
+
+                            <div class="link-title">Etat civil</div>
+
+
+                        </a>
+
+                        <a href="#" class="services-clic">
+
+                            <span class="picto">
+
+                                <img class="home-img" src="medias/icons/budget.png" alt="icone-budget">
+
+                            </span>
+
+                            <div class="link-title">Budget</div>
+
+
+                        </a>
+
+                        <a href="#" class="services-clic">
+
+                            <span class="picto">
+
+                                <img class="home-img" src="medias/icons/camera2.png" alt="icone-securite">
+
+                            </span>
+
+                            <div class="link-title">Securite</div>
+
+
+                        </a>
+
+                        <a href="#" class="services-clic">
+
+                            <span class="picto">
+
+                                <img class="home-img" src="medias/icons/dechets2.png" alt="icone-dechets">
+
+                            </span>
+
+                            <div class="link-title">Dechets</div>
+
+
+                        </a>
+
+                        <a href="#" class="services-clic">
+
+                            <span class="picto">
+
+                                <img class="home-img" src="medias/icons/hotel-de-ville.png" alt="icone-ville">
+
+                            </span>
+
+                            <div class="link-title">La ville</div>
+
+
+                        </a>
+
+                        <a href="#" class="services-clic">
+
+                            <span class="picto">
+
+                                <img class="home-img" src="medias/icons/sport.png" alt="icone-sport">
+
+                            </span>
+
+                            <div class="link-title">Sports</div>
+
+
+                        </a>
+
+                    </div>
+
+                    <div id="bouton-services">
+
+                        <a href="#" class="liens-services" title="Nos autres services"></a>
+    
+                        <span class="liens-txt">Nos autres services</span>
+    
+                    </div>
+
+                </div>
+
+               
+
+            </section>
+
+
+            <section id="actualites">
+
+                <div class="section-actus">
+
+                    <h2 class="titre-liens">Nos actualités</h2>
+
+                    <div class="actualites">
+
+                        <div class="event">
+
+                            <span class="event-picto">
+
+                                <img src="medias/Festivité_bruxelles.png" alt="Festival Europalia">
+
+                            </span>
+
+                            <h3>Festival Europalia</h3>
+
+                            <p class="event-text">Les activités durant ce festival ne manquent pas de variétés. Le théâtre, la danse, le cinéma, la littérature et les conférences scientifiques seront au rendez-vous. Les musées bruxellois prendront part à la festivité avec des expositions....</p>
+
+                            <a href="#" class="event-link">En savoir plus</a>
+
+
+                        </div>
+
+                        <div class="event">
+
+                            <span class="event-picto">
+
+                                <img src="medias/parade_bruxelles-800-530.png" alt="Parade Bruxelles">
+
+                            </span>
+
+                            <h3>Parade Bruxelles</h3>
+
+                            <p class="event-text">la Zinneke Parade traverse la ville en juillet, c'est l'occasion de revêtir les déguisements les plus délirants..</p>
+
+                            <a href="#" class="event-link">En savoir plus</a>
+
+
+                        </div>
+
+                        <div class="event">
+
+                            <span class="event-picto">
+
+                                <img src="medias/rollerbike-800-530.png" alt="Rollerbike Bruxelles">
+
+                            </span>
+
+                            <h3>Rollerbike Bruxelles</h3>
+
+                            <p class="event-text">Roller Bike Parade du 10 juin au 23 septembre 2022. Chaque vendredi soir, du 10 juin au 23 septembre 2022, Bruxelles reçoit la Roller Bike Parade, des randonnées sportives à suivre à rollers, vélos, skateboards, trottinettes ou longboards. Le départ (à 20h) et l'arrivée se feront depuis la place Poelaert (Palais de Justice).</p>
+
+                            <a href="#" class="event-link">En savoir plus</a>
+
+
+                        </div>
+                       
+
+                    </div>
+
+                    <div id="bouton-actus">
+
+                        <a href="#" class="liens-actus" title="Nos autres actualites"></a>
+    
+                        <span class="liens-txt">Toutes nos actualités</span>
+    
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="news">
+
+
+                <div class="section-actus">
+
+                    <h2 class="titre-liens">Nos newspapers</h2>
+
+                    <div class="actualites">
+
+                        <div class="event">
+
+                            <span class="event-picto">
+
+                                <img src="medias/Festivité_bruxelles.png" alt="Festival Europalia">
+
+                            </span>
+
+                            <h3>Festival Europalia</h3>
+
+                            <p class="event-text">Les activités durant ce festival ne manquent pas de variétés. Le théâtre, la danse, le cinéma, la littérature et les conférences scientifiques seront au rendez-vous. Les musées bruxellois prendront part à la festivité avec des expositions....</p>
+
+                            <a href="#" class="event-link">En savoir plus</a>
+
+
+                        </div>
+
+                        <div class="event">
+
+                            <span class="event-picto">
+
+                                <img src="medias/parade_bruxelles-800-530.png" alt="Parade Bruxelles">
+
+                            </span>
+
+                            <h3>Parade Bruxelles</h3>
+
+                            <p class="event-text">la Zinneke Parade traverse la ville en juillet, c'est l'occasion de revêtir les déguisements les plus délirants..</p>
+
+                            <a href="#" class="event-link">En savoir plus</a>
+
+
+                        </div>
+
+                        <div class="event">
+
+                            <span class="event-picto">
+
+                                <img src="medias/rollerbike-800-530.png" alt="Rollerbike Bruxelles">
+
+                            </span>
+
+                            <h3>Rollerbike Bruxelles</h3>
+
+                            <p class="event-text">Roller Bike Parade du 10 juin au 23 septembre 2022. Chaque vendredi soir, du 10 juin au 23 septembre 2022, Bruxelles reçoit la Roller Bike Parade, des randonnées sportives à suivre à rollers, vélos, skateboards, trottinettes ou longboards. Le départ (à 20h) et l'arrivée se feront depuis la place Poelaert (Palais de Justice).</p>
+
+                            <a href="#" class="event-link">En savoir plus</a>
+
+
+                        </div>
+                       
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
 
         </main>
         
-
         <footer>
 
+            <div class="footerflex">
+                
+                <div class="footeradresse">
+            
+                    <h2 class="footerh2">Adresse</h2>
+            
+                    <div class="footerp">
+
+                        <p>Hotel de Ville-Grand-Place-1000 Bruxelles</p>
+
+                        <p>Centre administratif-Boulevard Anspach 6-1000 Bruxelles</p>
+
+                        <p>+32 2 279 23 43</p>
+
+                    </div>
+            
+                    <a href="#" class="event-footer">En savoir plus</a>
+
+                </div>
+            
+                <div class="footerhoraire">
+                    
+                    <h2 class="footerh2">Horaires</h2>
+
+                        <p>Lundi : 8h30-12h30 / 13h30-17h00</p>
+
+                        <p>Mardi : 8h30-12h30 / 13h30-17h00</p>
+
+                        <p>Mercredi : 8h30-12h30 / 13h30-17h00</p>
+
+                        <p>Jeudi : 8h30-12h30 / 13h30-17h00</p>
+
+                        <p>Vendredi : 8h30-12h30 / 13h30-17h00</p>
+
+                </div>
+
+                <div class="footercopyright">
+
+                    <ul>
+
+                        <li>Copyright 2022 Ville de Bruxelles</li>
+
+                        <li><a href="Mentions_legales.html" class="mentions">Mentions légales</a></li>
+
+                        <li><a href="Mentions_legales.html" class="mentions">Politique de confidentialité</a></li>
+                    
+                    </ul>
+
+                </div>
+
+            </div>
 
         </footer>
 
-        <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script><script> window.start.init({Palette:"palette2",Mode:"banner bottom",Theme:"classic",Message:" Ce site utilise des cookies pour vous garantir la meilleure expérience sur notre site",ButtonText:"J'accepte",LinkText:"En savoir plus",Time:"5",})</script>
+        <script src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script><script> window.start.init({Palette:"palette2",Mode:"banner bottom",Theme:"classic",Message:" Ce site utilise des cookies pour vous garantir la meilleure expérience sur notre site",ButtonText:"J'accepte",LinkText:"En savoir plus",Time:"5",})</script>
         
     </body>
 
