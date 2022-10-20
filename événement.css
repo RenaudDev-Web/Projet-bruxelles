@@ -125,14 +125,15 @@ li a:hover::before {
 
 /*Evenements*/
 
-h1{
-  text-indent: 15%;
+#événementh2{
+  text-align: center;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
+  font-size: 2em;
 }
 
 .select{
-  text-indent: 15%;
+  text-align: center;
   padding-bottom: 5em;
 }
 
