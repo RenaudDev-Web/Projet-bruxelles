@@ -1,6 +1,7 @@
 
 body{
     overflow: hidden;
+    font-family: 'Roboto Slab', serif;
 }
 
 #background{
@@ -20,6 +21,53 @@ top: 0;
     
 }
 
+main{
+    position: relative;
+    background: rgba(245, 245, 245, 0.925);
+    width: 80%;
+    min-height: 850px;
+    margin: 10px auto;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.260);
+}
+
+.retour{
+    position: absolute;
+    z-index: 2;
+  left: 26.2%;
+  top: 73%;
+   background-color: #31455d;
+ color: #fff;
+ font-family: Trebuchet MS;
+ font-size: 15px;
+ text-decoration: none;
+ padding: 14px 15px;
+ border: 0px solid #000;
+ border-radius: 10px;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 5%;
+}
+
+.retour:hover{
+opacity: 0.85;
+
+}
+
+.fleche{
+    width: 15%;
+  margin-right: 2%;
+  border-radius: 100%;
+  
+}
+
+.retour span{
+    margin-left: 10%;
+    width: 10%;
+}
 
 
 
@@ -32,35 +80,57 @@ top: 0;
 .imagea{
     width: 25%;
     margin-left: 10%;
-    margin-top: 2%;
+    margin-top: 4%;
     flex: 1;
     
 }
 
-h2{
+#roller{
     text-align: center;
-    margin-top: 15%;
+    margin-top: 2%;
     font-size: 2.5em;
-}
-
-h2:hover{
-    text-decoration: underline;
-    cursor: pointer;
-    color:  #28486f;;
+    background-color: #fbb52d;
+    width: 75%;
+    margin-left: 13%;
 }
 
 .h2{
     flex: 2;
+    align-self: center;
 }
 
 .flex2{
     display: flex;
     flex-wrap: wrap;
+    gap: 3%;
+}
 
+.date{
+    text-align: center;
+    flex: 1;
+    margin-top: 4%;
+    order: 1;
+}
+
+#save{
+    margin-bottom: 7%;
+}
+
+hr{
+    width: 50%;
+}
+
+.paragraphe{
+    flex: 1;
+    order: 2;
+}
+
+.texte{
+    width:80%;
 }
 
 .icons {
-    flex: 1;
+    
     text-align: center;
     font-size: 2rem;
 }
@@ -73,6 +143,51 @@ h2:hover{
 .icons a:hover {
 
     color:#fbb52d;
+}
+
+
+
+@media screen and (max-width: 480px){
+
+    body{
+        overflow: auto;
+        background-color: #31455d;
+    }
+
+    #background1{
+       display: none; 
+    }
+
+.imagea{
+    width: 70%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+.paragraphe{
+    flex: auto;
+    order: 1;
+}
+
+.date{
+    order: 2;
+}
+
+.icons{
+    margin-bottom: 25%;
+}
+
+.retour{
+    top: 150%;
+    left: 33.5%;
+    width: 25%;
+}
+
+.texte{
+    width: 100%;
+}
+
 }
 
 
