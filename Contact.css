@@ -118,17 +118,10 @@ header .icons a {
 }
 
 .icons a:hover {
-
-  color:#fbb52d;
+  color: #fbb52d;
 }
 
 /* ====Fin Menu HEADER ===== */
-
- 
-
-
-
-
 
 /* Menu  MAIN */
 
@@ -136,7 +129,6 @@ main {
   font-family: "Roboto", sans-serif;
   color: #0c0c0c;
   margin-bottom: 1%;
-  
 }
 
 main h1 {
@@ -232,28 +224,21 @@ main .info:hover {
 }
 
 body {
-    background-size: cover;
+  background-size: cover;
   background-blend-mode: darken;
   color: rgb(8, 8, 8);
   font-weight: bold;
   margin: 0;
 }
 
-#envoie{
-  background-color:white ;
+#envoie {
+  background-color: white;
   color: #31455d;
   padding: 5px;
   border: none;
 }
 
 /* ==== Fin Menu MAIN ===== */
-
-
-
-
-
-
-
 
 /*  Menu FOOTER */
 
@@ -265,19 +250,18 @@ footer ul li {
   list-style-type: none;
 }
 
-footer{
-  font-family: 'Roboto Slab', serif;
+footer {
+  font-family: "Roboto Slab", serif;
 }
 
-.footerflex{
+.footerflex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.footeradresse{
-  
+.footeradresse {
   width: 50%;
   background-color: #31455d;
   color: white;
@@ -285,25 +269,25 @@ footer{
   padding-bottom: 10px;
 }
 
-#footerh2{
-text-align: center;
-}
-
-.footerp{
+#footerh2 {
   text-align: center;
 }
 
-footer a{
+.footerp {
+  text-align: center;
+}
+
+footer a {
   margin: 0 auto;
   display: block;
   width: 20%;
 }
 
-.footerbutton{
+.footerbutton {
   text-decoration: none;
 }
 
-.footerbutton1{
+.footerbutton1 {
   padding: 10px 50% 10px 14%;
   margin-left: 20%;
   cursor: pointer;
@@ -311,52 +295,65 @@ footer a{
   height: 15%;
 }
 
-.footerbutton1:hover{
-opacity: 0.75;
+.footerbutton1:hover {
+  opacity: 0.75;
 }
 
-.footerhoraire{
+.footerhoraire {
   text-align: center;
   width: 50%;
   align-items: center;
   background-color: #31455d;
-  color: white;    
-}
-
-.footercopyright{
-  text-align: center;
-  flex: 1;
-  background-color:  #fbb52D;
   color: white;
 }
 
-.cookie ul li a{
+.footercopyright {
+  text-align: center;
+  flex: 1;
+  background-color: #fbb52d;
+  color: white;
+}
+
+.cookie ul li a {
   text-decoration: none;
   text-align: center;
 }
 
+.event-footer {
+  background-color: #31455d;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 15px;
+  width: 20%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+}
+
+.event-footer:hover {
+  background-color: #31455d;
+  color: #fbb52d;
+  text-decoration: none;
+  padding: 14px 15px;
+  width: 20%;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+}
+
 /* ==== Fin Menu FOOTER ===== */
-
-
-
-
-
-
 
 /* ==== MEDIAS QUERIES ===== */
 
-@media screen and (max-width:490px) {
-  .droite{
+@media screen and (max-width: 490px) {
+  .droite {
     display: none;
   }
-  main .gauche{
+  main .gauche {
     width: 100%;
     margin-bottom: 20px;
   }
-  main .centre{
+  main .centre {
     width: 100%;
     flex-basis: 100%;
   }
-} 
+}
 
 /* ====FIN MEDIAS QUERIES ===== */
