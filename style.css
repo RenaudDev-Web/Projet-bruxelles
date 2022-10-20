@@ -752,6 +752,7 @@ label, #toggle
         width: 70%;
         background: #5A5766;
         border-bottom: 1px dotted;
+        color: white;
     }
 
     nav .main_pages a:hover {
