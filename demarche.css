@@ -1,5 +1,8 @@
 /*Ne rien écrire au dessus*/
-h2{
+body{
+  font-family: 'roboto';
+}
+h1{
   text-align: center;
  font-family:"Oswald";
  color: #31455D;
@@ -11,16 +14,12 @@ img{
     margin: 15%;
     margin-top: 5%;
 }
-.entete{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-}
+
 
 
   .fleche{
-    width: 20%;
-   margin-left:80%;
+    width: 25%;
+   margin-left:74%;
    margin-bottom:5%;
    
     
@@ -28,120 +27,35 @@ img{
 
   p{
     font-size: 17px;
-    color: #ffffff;
+    color:  #ffffff;
     margin: 100px;
     padding-left: 5%;
-    font-weight: bolder;
-    font-family:'Roboto';
+    font-weight: bold;
+    font-family: 'roboto';
    
   }
+
+.etat{
+  text-decoration: none;
+  color:  #fff8f8;
+}
+
+
+
   .barre{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    border-radius: 8%;
-    border-width: 7px;
-    background: linear-gradient(90deg, rgb(29, 28, 28) 0%, rgb(119, 119, 119) 35%, rgb(255, 248, 248) 100%);
     margin-left: 10%;
     width: 70%;
     height: 20%;
-    color: #ffffff;
+    background-color: #fbb52d;
+  
     
     }
     
 
-  .barre2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border-radius: 8%;
-    border-width: 7px;
-    background: linear-gradient(90deg, rgb(29, 28, 28) 0%, rgb(119, 119, 119) 35%, rgb(255, 248, 248) 100%);
-    margin-left: 10%;
-    width: 70%;
-    height: 20%;
-    
-  }
-
-  .barre3{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border-radius: 8%;
-    border-width: 7px;
-    background: linear-gradient(90deg, rgb(29, 28, 28) 0%, rgb(119, 119, 119) 35%, rgb(255, 248, 248) 100%);
-    margin-left: 10%;
-    width: 70%;
-    height: 20%;
-    
-
-  }
-
-  .barre4{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border-radius: 8%;
-    border-width: 7px;
-    background: linear-gradient(90deg, rgb(29, 28, 28) 0%, rgb(119, 119, 119) 35%, rgb(255, 248, 248) 100%);
-    margin-left: 10%;
-    width: 70%;
-    height: 20%;
-    
-  }
-
-  .barre5{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border-radius: 8%;
-    border-width: 7px;
-    background: linear-gradient(90deg, rgb(29, 28, 28) 0%, rgb(119, 119, 119) 35%, rgb(255, 248, 248) 100%);
-    margin-left: 10%;
-    width: 70%;
-    height: 20%;
-    
-  }
-
-  .barre6{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border-radius: 8%;
-    border-width: 7px;
-    background: linear-gradient(90deg, rgb(29, 28, 28) 0%, rgb(119, 119, 119) 35%, rgb(255, 248, 248) 100%);
-    margin-left: 10%;
-    width: 70%;
-    height: 20%;
-    
-  }
-
-  .barre7{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border-radius: 8%;
-    border-width: 7px;
-    background: linear-gradient(90deg, rgb(29, 28, 28) 0%, rgb(119, 119, 119) 35%, rgb(255, 248, 248) 100%);
-    margin-left: 10%;
-    width: 70%;
-    height: 20%;
-    
-    
-  }
-
-  .barre8{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border-radius: 8%;
-    border-width: 7px;
-    background: linear-gradient(90deg, rgb(29, 28, 28) 0%, rgb(119, 119, 119) 35%, rgb(255, 248, 248) 100%);
-    margin-left: 10%;
-    width: 70%;
-    height: 20%;
-    
-  }
+  
 
   .partie1{
     display: grid;
@@ -154,7 +68,8 @@ img{
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
   }
-
+ 
+ 
   /*Ne rien écrire en dessous*/
     
 
