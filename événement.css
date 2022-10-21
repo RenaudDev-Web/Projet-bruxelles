@@ -56,7 +56,6 @@ header #head-wrap .wrap {
   text-align: center;
   border-left: 1px dotted#31455d;
   border-right: 1px dotted #31455d;
-
 }
 
 
@@ -628,11 +627,8 @@ opacity: 0.75;
 
   #toggle:checked + .main_pages {
       display: flex;
+      
   }
-
-
-
-  
   
   .icons {
       order: 2;
@@ -651,20 +647,9 @@ opacity: 0.75;
       color:#fbb52d;
   }
 
-  .footeradresse{
-    width: 100%;
-    margin-bottom: 2%;
-  }
-  
-  .footerhoraire{
-    width: 100%;
-    margin-bottom: 2%;
-  }
-  
-  a.event-footer{
-    width: 30%;
-    background-color: #405670;
-  }
+
+/*Actualités*/
+
   
     .flex,.flex1{
       display: block;
@@ -705,5 +690,29 @@ opacity: 0.75;
   a.button1, a.button2, a.button3, a.button4{
     width: 50%;
   }
+
+  .slide-text{
+    padding-right: 0;
+  }
+
+
+
+    /*footer*/
+
+
+    .footeradresse{
+      width: 100%;
+      margin-bottom: 2%;
+    }
+    
+    .footerhoraire{
+      width: 100%;
+      margin-bottom: 2%;
+    }
+    
+    a.event-footer{
+      width: 30%;
+      background-color: #405670;
+    }
 
 }
