@@ -7,6 +7,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    /* gap: 1px; */
 }
 
 .footeradresse{
@@ -18,7 +19,7 @@ footer{
     padding-bottom: 10px;
 }
 
-#footerh2{
+.footerh2{
 text-align: center;
 }
 
@@ -29,7 +30,6 @@ text-align: center;
 footer a{
     margin: 0 auto;
     display: block;
-    width: 20%;
 }
 
 .footerbutton{
@@ -63,3 +63,49 @@ opacity: 0.75;
     background-color:  #fbb52D;
     color: white;
 }
+
+.footercopyright li {
+
+    display: inline-block;
+}
+
+.footercopyright a:hover {
+    text-decoration: none;
+}
+
+.footercopyright .mentions {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.footercopyright p {
+
+    text-align: center;
+}
+
+.event-footer {
+
+    background-color: #31455d;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 15px;
+    width: 20%;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+
+}
+
+.event-footer:hover {
+
+    background-color: #31455d;
+    color: #fbb52D;
+    text-decoration: none;
+    padding: 14px 15px;
+    width: 20%;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+}
+
+/* ==== RESPONSIVE A VENIR ====
+
+@florian */
