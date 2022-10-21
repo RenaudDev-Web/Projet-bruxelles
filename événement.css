@@ -56,7 +56,6 @@ header #head-wrap .wrap {
   text-align: center;
   border-left: 1px dotted#31455d;
   border-right: 1px dotted #31455d;
-
 }
 
 
@@ -628,6 +627,7 @@ opacity: 0.75;
 
   #toggle:checked + .main_pages {
       display: flex;
+      
   }
   
   .icons {

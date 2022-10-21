@@ -4,6 +4,10 @@ body{
     overflow-x: hidden;
 }
 
+
+/*Header*/
+
+
 header.sticky {
 
     width: 100%;
@@ -85,6 +89,7 @@ nav .main_pages a
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
     color: white;
+    z-index: 2;
 }
  
 nav a:hover 
@@ -111,10 +116,19 @@ nav a:hover
     color:#fbb52d;
 }
 
+label, #toggle
+{
+    display: none;
+}
+
+
+/*actualités*/
+
+
 #background{
     
     position: absolute;
-width: 115%;
+    width: 114%;
 z-index: -1;
 opacity: 0.75;
 left: 0;
@@ -124,6 +138,8 @@ top: 0;
 #background1{
     width: 90%;
     height: auto;
+    width: 120%;
+    
 }
 
 main{
@@ -263,27 +279,238 @@ opacity: 0.85;
     color:#fbb52d;
 }
 
-@media screen and (max-width: 1400px){
 
-#background{
-    width: 135%;
+/*Footer*/
+
+
+footer{
+    font-family: 'Roboto Slab', serif;
 }
 
-.texte{
-    width: 80%;
-}
-
-.texte4{
+.footerflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    /* gap: 1px; */
 }
 
+.footeradresse{
+    
+    width: 50%;
+    background-color: #31455d;
+    color: white;
+    min-height: 25vh;
+    padding-bottom: 10px;
+}
+
+.footerh2{
+text-align: center;
+}
+
+.footerp{
+    text-align: center;
+}
+
+footer a{
+    margin: 0 auto;
+    display: block;
+}
+
+.footerbutton{
+    text-decoration: none;
+}
+
+.footerbutton1{
+    padding: 10px 50% 10px 14%;
+    margin-left: 20%;
+    cursor: pointer;
+    width: 20%;
+    height: 15%;
+}
+
+.footerbutton1:hover{
+opacity: 0.75;
+}
+
+.footerhoraire{
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    background-color: #31455d;
+    color: white;    
+
+}
+
+.footercopyright{
+    text-align: center;
+    flex: 1;
+    background-color:  #fbb52D;
+    color: white;
+}
+
+.footercopyright li {
+
+    display: inline-block;
+}
+
+.footercopyright a:hover {
+    text-decoration: none;
+}
+
+.footercopyright .mentions {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.footercopyright p {
+
+    text-align: center;
+}
+
+.event-footer {
+
+    background-color: #31455d;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 15px;
+    width: 20%;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+
+}
+
+.event-footer:hover {
+
+    background-color: #31455d;
+    color: #fbb52D;
+    text-decoration: none;
+    padding: 14px 15px;
+    width: 20%;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
 }
 
 
 @media screen and (max-width: 480px){
 
+
+    /*header*/
+
+
+    header.sticky {
+        width: 100%;
+        background: white;
+    }
+
+    
+    header #head-wrap {
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+   
+    .p-bienvenue {
+    
+        font-family: 'Oswald', sans-serif;
+        color: #31455d;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+    
+    }
+    
+    .logo {
+        order: 1;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .home-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .bienvenue {
+        display: none;
+    
+    }
+
+
+
+
+    nav
+    {
+        height: 60px;
+        
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #31455d;
+        height: 220px;  
+        
+    }
+ 
+    nav .main_pages a {
+        width: 70%;
+        background: #5A5766;
+        border-bottom: 1px dotted;
+        color: white;
+        
+    }
+
+    nav .main_pages a:hover {
+        background: #48435C;
+    }
+
+  
+    
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+
+    .icons {
+        order: 2;
+        flex: 1;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .icons a {
+        color: #31455d;
+        text-decoration: none;
+    }
+    
+    .icons a:hover {
+    
+        color:#fbb52d;
+    }
+
+
+    /*Actualités*/
+
+
     body{
-        overflow: auto;
         background-color: #31455d;
     }
 
@@ -317,6 +544,27 @@ opacity: 0.85;
 .texte{
     width: 100%;
 }
+
+.texte4{
+    width: 100%;
+}
+
+/*Footer*/
+
+.footeradresse{
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  
+  .footerhoraire{
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  
+  a.event-footer{
+    width: 30%;
+    background-color: #405670;
+  }
 
 }
 
@@ -364,6 +612,14 @@ opacity: 0.85;
 
 .texte{
     width: 100%;
+}
+
+}
+
+@media screen and (max-width:1350px){
+    
+#background1{
+    width: 160%;
 }
 
 }
