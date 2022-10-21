@@ -150,7 +150,7 @@ li a:hover::before {
 
 .flex1{
   display: flex;
-  align-items: flex-start;
+  
   flex-wrap: wrap;
   gap: 3em;
   text-align: center;
@@ -158,13 +158,9 @@ li a:hover::before {
 }
 
 .image1, .image3{
-  width: 30em;
+  width: 70%;
   height: auto;
   padding-top: 0.5em;
-  }
-
-  .image3{
-    height: 35vh;
   }
 
   .image1:hover, .image3:hover{
@@ -173,12 +169,10 @@ li a:hover::before {
 
 .image2, .image4{
   height: auto;
-  width: 30em;
+  width: 70%;
   padding-top: 0.5em;
 }
-.image4{
-  height: 35vh;
-}
+
 
 .image2:hover, .image4:hover{
   opacity: 0.75;
@@ -216,6 +210,11 @@ padding-left: 15%;
   width: 100%;
   text-align: left;
   color: white;
+  min-height: 220px;
+}
+
+#p1, #p2{
+  min-height: 190px;
 }
 
 .parade{
@@ -232,7 +231,6 @@ padding-left: 15%;
   min-height: 73vh;
   background-color: #303030;
   box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
-  
 }
 
 .imagetexte1, .imagetexte3{
@@ -242,6 +240,7 @@ padding-left: 15%;
   min-height: 73vh;
   background-color: #303030;
   box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+  
 }
 
 
@@ -480,6 +479,4 @@ hr{
 a.button1, a.button2, a.button3, a.button4{
   width: 50%;
 }
-
-
 }
