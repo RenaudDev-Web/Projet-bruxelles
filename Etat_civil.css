@@ -135,6 +135,7 @@ header.sticky {
     height: 20%;
     text-align: center;
     color: white;
+    margin-left: 40%;
 }
 
 h3{
@@ -163,9 +164,10 @@ h4{
 
 a{
     font-family: 'roboto';
-    font-size: 14px; 
+    font-size: 16px; 
     text-decoration: none;
     color: #fbb52d;
+    font-weight: bold;
 
 }
 
@@ -186,6 +188,34 @@ h2{
     font-family: 'roboto';
     font-size: 20px;
     color: #31455D;
+}
+
+.carteidentite{
+    border-style: dotted;
+    margin-top: 2%;
+    width: 1300px;
+    margin-left: 7%;
+    padding: 3%;
+   
+}
+
+.passeport{
+    border-style: dotted;
+    margin-top: 2%;
+    width: 1300px; 
+    margin-left: 7%;
+    padding: 3%;
+
+}
+
+.serviceetatcivil{
+    border-style: dotted;
+    margin-top: 2%;
+    width: 1300px; 
+    margin-left: 7%;
+    margin-bottom: 7%;
+    padding: 3%;
+
 }
 
 /*Ne rien écrire en dessous*/
