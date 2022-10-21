@@ -3,125 +3,6 @@ body{
   font-family: 'Roboto Slab', serif;
 }
 
-/*Header*/
-
-.sticky {
-
-  position: sticky;
-  width: 100%;
-  background: white;
-}
-
-#head-wrap {
-
-  max-width: 100%;
-  height: 80px;
-  padding: 10px 0;
-  box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
-}
-
-.wrap {
-
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-.logo {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-/* img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
-
-.bienvenue {
-  flex: 1;
-  text-align: center;
-  border-left: 1px dotted#31455d;
-  border-right: 1px dotted #31455d;
-
-}
-
-.navbar{
-  flex-basis: 100%;
-  padding-bottom: 0.1rem;
-  padding-top: 00.1rem;
-  justify-content: space-between;
-  background-color: #31455d;
-  text-align: center;
-
-
-}
-.navbar a{
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-.navbar ul{
-  align-items: center;
-  list-style: none;
-}
-.navbar li{
-  display: inline;
-  padding: 0 3% 0 3%;
-}
-
-li span{
-  word-spacing: 2px;
-}
-
-li a {
-  color: white;
-  position: relative;
-  text-decoration: none;
-}
-
-li a::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  border-radius: 4px;
-  background-color: white;
-  bottom: 0;
-  left: 0;
-  transform-origin: none;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
-}
-
-li a:hover::before {
-  transform-origin: center;
-  transform: scaleX(1);
-}
-
-
-.icons {
-  flex: 1;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.icons a {
-  color: #31455d;
-  text-decoration: none;
-}
-
-.icons a:hover {
-
-  color:#fbb52d;
-}
-
-
 
 /*Evenements*/
 
@@ -150,7 +31,7 @@ li a:hover::before {
 
 .flex1{
   display: flex;
-  align-items: flex-start;
+  
   flex-wrap: wrap;
   gap: 3em;
   text-align: center;
@@ -158,13 +39,9 @@ li a:hover::before {
 }
 
 .image1, .image3{
-  width: 30em;
+  width: 70%;
   height: auto;
   padding-top: 0.5em;
-  }
-
-  .image3{
-    height: 35vh;
   }
 
   .image1:hover, .image3:hover{
@@ -173,12 +50,10 @@ li a:hover::before {
 
 .image2, .image4{
   height: auto;
-  width: 30em;
+  width: 70%;
   padding-top: 0.5em;
 }
-.image4{
-  height: 35vh;
-}
+
 
 .image2:hover, .image4:hover{
   opacity: 0.75;
@@ -216,6 +91,11 @@ padding-left: 15%;
   width: 100%;
   text-align: left;
   color: white;
+  min-height: 220px;
+}
+
+#p1, #p2{
+  min-height: 190px;
 }
 
 .parade{
@@ -232,7 +112,6 @@ padding-left: 15%;
   min-height: 73vh;
   background-color: #303030;
   box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
-  
 }
 
 .imagetexte1, .imagetexte3{
@@ -242,6 +121,7 @@ padding-left: 15%;
   min-height: 73vh;
   background-color: #303030;
   box-shadow: 0px 4px 6px rgb(0 0 0 / 10%);
+  
 }
 
 
@@ -480,6 +360,4 @@ hr{
 a.button1, a.button2, a.button3, a.button4{
   width: 50%;
 }
-
-
 }
