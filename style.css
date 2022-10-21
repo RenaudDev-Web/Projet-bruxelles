@@ -34,6 +34,16 @@ header #head-wrap .wrap {
 
 }
 
+.p-bienvenue {
+
+    font-family: 'Oswald', sans-serif;
+    color: #31455d;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
 .logo {
     flex: 1;
     display: flex;
@@ -54,7 +64,11 @@ header #head-wrap .wrap {
 
 }
 
-.navbar{
+
+/* ==== MENU ==== */
+
+
+/* .navbar{
     flex-basis: 100%;
     padding-bottom: 0.1rem;
     padding-top: 00.1rem;
@@ -105,6 +119,41 @@ header #head-wrap .wrap {
 .navbar li a:hover::before {
     transform-origin: center;
     transform: scaleX(1);
+} */
+
+nav 
+{
+    /* margin: 100px auto; */
+    width: 100%;
+    height: 60px;
+    background: #48435C;
+}
+ 
+nav .main_pages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+nav .main_pages a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: white;
+}
+ 
+nav a:hover 
+{
+
+    background: #fbb52d;
+    color: #303030
 }
 
 
@@ -126,16 +175,6 @@ header #head-wrap .wrap {
 
 
 /* === MAIN === */
-
-
-.h1-bienvenue {
-
-    font-family: 'Oswald', sans-serif;
-    color: #31455d;
-    font-size: 30px;
-    text-transform: uppercase;
-
-}
 
 
 section .bg-main {
@@ -197,9 +236,7 @@ section .bg-main {
 }
 
 
-label {
-    display: none;
-}
+
 
 .section-liens {
 
@@ -381,12 +418,12 @@ a.services-clic:hover .picto {
     height: 50px;
     text-decoration: none;
     color: white;
-    background-color: #fbb52d;
+    background-color: #31455d;
 }
 
 #bouton-actus:hover {
     
-    background-color: #31455d;
+    background-color: #fbb52d;
     cursor: pointer;
     transition: ease-in 0.5s;
 }
@@ -409,6 +446,14 @@ a.services-clic:hover .picto {
 
 /* ==== Evenements ==== */
 
+.event h3{ 
+
+    font-family: 'Oswald', sans-serif;
+    color: #31455d;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+}
 
 .event-picto img {
    width: 100%;
@@ -434,7 +479,7 @@ p.event-text {
 
 
 a.event-link {
-        background-color: #31455d;
+        background-color: #FBB52D;
         color: #fff;
         text-decoration: none;
         padding: 14px 15px;
@@ -581,3 +626,233 @@ opacity: 0.75;
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
 }
 
+label, #toggle
+{
+    display: none;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media screen and (max-width: 480px) {
+
+
+    header.sticky {
+
+        width: 100%;
+        background: white;
+    }
+    
+    header #head-wrap {
+    
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+   
+    
+    .p-bienvenue {
+    
+        font-family: 'Oswald', sans-serif;
+        color: #31455d;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+    
+    }
+    
+    .logo {
+        order: 1;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .home-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .bienvenue {
+        display: none;
+    
+    }
+ 
+
+    /* .navbar
+    {
+        height: 60px;
+    }
+ 
+    .navbar .main_pages
+    {
+        display: none;
+        flex-direction: column;
+        background: #48435C;
+        height: 220px;
+    }
+ 
+    .navbar .main_pages ul li a {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .navbar .main_pages li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+
+    .navbar li {
+
+        padding-left: 0;
+    }
+
+    ul {
+        display: inline-block;
+    }
+  
+    label 
+    {
+
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+
+
+    } 
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    } */
+
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #31455d;
+        height: 220px;
+    }
+ 
+    nav .main_pages a {
+        width: 70%;
+        background: #5A5766;
+        border-bottom: 1px dotted;
+        color: white;
+    }
+
+    nav .main_pages a:hover {
+        background: #48435C;
+    }
+
+    
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+
+
+
+    
+    
+    .icons {
+        order: 2;
+        flex: 1;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .icons a {
+        color: #31455d;
+        text-decoration: none;
+    }
+    
+    .icons a:hover {
+    
+        color:#fbb52d;
+    }
+
+
+    .services {
+
+        flex-direction: column;
+
+        justify-content: space-between;
+
+    }
+
+    .section-liens {
+
+        width: 120px;
+    }
+
+    .link-title {
+
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    #services{
+
+        align-items: center;
+    }
+
+    .picto {
+
+        justify-content: center;
+        
+    }
+
+    .section-liens .services-clic {
+
+        width: 100%;
+    }
+
+    #recherche .seek input {
+        border: none;
+        border-radius: 5px;
+        padding: 20px 40px;
+        background-color: #FFF;
+        color: #7e7e7e;
+        width: 520px;
+        max-width: 100%;
+        font-size: 1rem;
+        font-weight: 400;
+
+    }
+
+    .actualites {
+        flex-direction: column;
+    }
+
+    .event {
+        padding: 1%;
+        width: auto;
+    }
+}
