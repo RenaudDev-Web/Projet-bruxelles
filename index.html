@@ -24,6 +24,8 @@
 
     <body>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
         <header class="sticky">
 
             <div id="head-wrap">
@@ -287,22 +289,33 @@
 
                     <h2 class="titre-liens">Nos newspapers</h2>
 
-                    <div class="actualites">
+                    <div class="news">
 
                         <div class="event">
 
                             <span class="event-picto">
 
-                                <img src="medias/Festivité_bruxelles.png" alt="Festival Europalia">
+                                <div class="overlay-image">
+
+                                    <img src="medias/octobre-rose.png" alt="image news">
+
+                                    <div class="hover-image">
+                                    
+                                        <h3>Octobre Rose 2022</h3>
+                                    
+                                        <p>Depuis le 10 octobre, la Ville de Bruxelles est officiellement devenue une "Ville Rose". C'est s'engager activement dans la lutte contre le cancer du sein.</p>
+                                    
+                                    </div>
+                                
+                                </div>
 
                             </span>
 
-                            <h3>Festival Europalia</h3>
+                            <div class="event-news">
 
-                            <p class="event-text">Les activités durant ce festival ne manquent pas de variétés. Le théâtre, la danse, le cinéma, la littérature et les conférences scientifiques seront au rendez-vous. Les musées bruxellois prendront part à la festivité avec des expositions....</p>
-
-                            <a href="#" class="event-link">En savoir plus</a>
-
+                                <a href="#">Telechargez ce numéro<img src="medias/icons/adobe.png" class="pdf"></a>
+    
+                            </div>
 
                         </div>
 
@@ -310,16 +323,27 @@
 
                             <span class="event-picto">
 
-                                <img src="medias/parade_bruxelles-800-530.png" alt="Parade Bruxelles">
+                                <div class="overlay-image">
+
+                                    <img src="medias/gare-midi.png" alt="image news">
+
+                                    <div class="hover-image">
+                                    
+                                        <h3>Autour de la gare du Midi</h3>
+                                    
+                                        <p>Le C.R.U "Autour de la gare du Midi" est soumis à enquête publique du 24 octobre au 24 novembre 2022.</p>
+                                    
+                                    </div>
+                                
+                                </div>
 
                             </span>
 
-                            <h3>Parade Bruxelles</h3>
+                            <div class="event-news">
 
-                            <p class="event-text">la Zinneke Parade traverse la ville en juillet, c'est l'occasion de revêtir les déguisements les plus délirants..</p>
-
-                            <a href="#" class="event-link">En savoir plus</a>
-
+                                <a href="#">Telechargez ce numéro<img src="medias/icons/adobe.png" class="pdf"></a>
+    
+                            </div>
 
                         </div>
 
@@ -327,16 +351,27 @@
 
                             <span class="event-picto">
 
-                                <img src="medias/rollerbike-800-530.png" alt="Rollerbike Bruxelles">
+                                <div class="overlay-image">
+
+                                    <img src="medias/horeca.png" alt="image news">
+
+                                    <div class="hover-image">
+                                    
+                                        <h3>Chaufferettes de terrasse</h3>
+                                    
+                                        <p>Afin de trouver des alternatives moins polluantes aux chaufferettes, Nous porposons une solution durable adaptée aux terrasses des bars et restaurants.</p>
+                                    
+                                    </div>
+                                
+                                </div>
 
                             </span>
 
-                            <h3>Rollerbike Bruxelles</h3>
+                            <div class="event-news">
 
-                            <p class="event-text">Roller Bike Parade du 10 juin au 23 septembre 2022. Chaque vendredi soir, du 10 juin au 23 septembre 2022, Bruxelles reçoit la Roller Bike Parade, des randonnées sportives à suivre à rollers, vélos, skateboards, trottinettes ou longboards. Le départ (à 20h) et l'arrivée se feront depuis la place Poelaert (Palais de Justice).</p>
-
-                            <a href="#" class="event-link">En savoir plus</a>
-
+                                <a href="#">Telechargez ce numéro<img src="medias/icons/adobe.png" class="pdf"></a>
+    
+                            </div>
 
                         </div>
                        
@@ -407,6 +442,30 @@
 
         </footer>
 
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
+
+<script type="text/javascript" id="cookiebanner" src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.0.0/cookiebanner.min.js" data-position="bottom" data-fg="#ffffff" data-bg="#3c546b" data-link="#fbb52D" data-moreinfo="Mentions_legales.html" data-message="Les cookies assurent le bon fonctionnement de notre site Internet. En utilisant ce dernier, vous acceptez leur utilisation." data-linkmsg="En savoir plus"></script>
 
     </body>
 

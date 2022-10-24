@@ -133,13 +133,13 @@ section .bg-main {
     align-items: center;
 }
 
-.recherche {
+/* .recherche {
 
-    /* display: flex;
+    display: flex;
     align-items: center;
     vertical-align: middle;
-    justify-content: center; */
-}
+    justify-content: center;
+} */
 
 .recherche .seek {
 
@@ -418,7 +418,6 @@ p.event-text {
     padding: 1%;
 }
 
-
 a.event-link {
         background-color: #FBB52D;
         color: #fff;
@@ -440,17 +439,96 @@ h3.event {
 
 }
 
+
+/* ==== NEWSPAPER ==== */
+
 #news {
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.news {
+
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.event-news {
+
+    background-color: #FBB52D;
+    margin-top: 30px;
+    padding: 14px 15px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.event-news a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img.pdf {
+    width: 10%;
+    padding-left: 25px;
+}
+
+.overlay-image {
+    position: relative; /* Important pour positionner le contenu par dessus, relatif à l'élément */
+    display: inline-block; /* Prendra la forme de son contenu */
+  }
+  
+  .overlay-image img {
+    vertical-align: middle; /* Ou display: block, pour enlever l'espace blanc */
+  }
+  
+  .overlay-image .hover-image {
+    /* Positionnement du contenu hover */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    /* Effets de transition */
+    opacity: 0; /* On cache l'élément via son opacité */
+    transition: opacity 0.25s ease-in-out; /* Effet de transition sur le hover */
+    
+    /* Style du contenu hover */
+    background-color: rgba(0,0,0,0.6); /* Couleur par défaut */
+    color: white;
+    padding: 30px;
+    
+    /* Centrer le contenu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .overlay-image:hover .hover-image {
+    opacity: 1; /* Lors du hover, on remet l'opacité à 1 */
+  }
+
+  .hover-image h3 {
+
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+
+  }
 
 
 
@@ -570,40 +648,26 @@ label, #toggle
 {
     display: none;
 }
-/* 
-#btn {
 
+#myBtn {
+    display: none;
     position: fixed;
-
-    bottom: 10px;
-
-    right: 10px;
-
+    bottom: 20px;
+    right: 30px;
     z-index: 99;
-
-    font-size: 15px;
-
+    font-size: 18px;
     border: none;
-
     outline: none;
-
-    background-color: gray;
-
-    color: darkgray;
-
+    background-color: red;
+    color: white;
     cursor: pointer;
-
     padding: 15px;
-
     border-radius: 4px;
-
-}
-
-#btn:hover {
-
-    background-color: #303030;
-
-} */
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
 
 
 
@@ -813,6 +877,5 @@ label, #toggle
     #news {
         height: auto;
     }
-    
 
 }
