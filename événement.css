@@ -180,6 +180,32 @@ h3{
   color: white;
 }
 
+.texte a, .texte1 a, .parade a,{
+  position: relative;
+}
+
+h3:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 68%;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+h3:hover:after { 
+  width: 20%; 
+  
+}
+
+
+
+
+
 .texte, .texte1{
 padding-left: 15%;
 }
