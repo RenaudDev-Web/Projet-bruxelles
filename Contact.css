@@ -1,20 +1,17 @@
 /* ==== Menu HEADER ===== */
 
 header.sticky {
-
   width: 100%;
   background: white;
 }
 
 header #head-wrap {
-
   max-width: 100%;
   height: 80px;
   padding: 10px 0;
 }
 
 header #head-wrap .wrap {
-
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -23,8 +20,7 @@ header #head-wrap .wrap {
 }
 
 .p-bienvenue {
-
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #31455d;
   font-size: 25px;
   text-transform: uppercase;
@@ -50,38 +46,34 @@ header #head-wrap .wrap {
   border-right: 1px dotted #31455d;
 }
 
-nav 
-{
+nav {
   /* margin: 100px auto; */
   width: 100%;
   height: 60px;
-  background: #48435C;
+  background: #48435c;
 }
 
-nav .main_pages 
-{
+nav .main_pages {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-nav .main_pages a 
-{
+nav .main_pages a {
   width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 60px;
   text-decoration: none;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 16px;
   color: white;
 }
 
 nav a:hover {
-
   background: #fbb52d;
-  color: #303030
+  color: #303030;
 }
 
 .icons {
@@ -96,17 +88,10 @@ nav a:hover {
 }
 
 .icons a:hover {
-  color:#fbb52d;
+  color: #fbb52d;
 }
 
-
 /* ====Fin Menu HEADER ===== */
-
-
-
-
-
-
 
 /* Menu  MAIN */
 
@@ -134,6 +119,7 @@ main .centre {
 }
 
 main .gauche form {
+  width: 80%;
   padding: 30px;
   color: #f5eeee;
   line-height: 220%;
@@ -146,6 +132,7 @@ main .gauche {
 
 main .droite {
   width: 40%;
+  border-width: 50%;
   background: url("medias/mairie2.jpg") no-repeat;
   background-size: contain;
   background-position: center;
@@ -180,7 +167,7 @@ main .mentions {
 
 main .mentions p {
   text-align: left;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 main .wrap {
@@ -214,7 +201,7 @@ body {
   background-blend-mode: darken;
   color: rgb(8, 8, 8);
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #envoie {
@@ -225,12 +212,6 @@ body {
 }
 
 /* ==== Fin Menu MAIN ===== */
-
-
-
-
-
-
 
 /*  Menu FOOTER */
 
@@ -329,18 +310,12 @@ footer a {
   width: 20%;
   box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
 }
-.burger, #toggle
-{
-    display: none;
+.burger,
+#toggle {
+  display: none;
 }
 
 /* ==== Fin Menu FOOTER ===== */
-
-
-
-
-
-
 
 /* ==== MEDIAS QUERIES ===== */
 
@@ -361,113 +336,93 @@ footer a {
 /* ===== RESPONSIVE ===== */
 
 @media screen and (max-width: 490px) {
-
-
   header.sticky {
-
-      width: 100%;
-      background: white;
+    width: 100%;
+    background: white;
   }
-  
+
   header #head-wrap {
-  
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
-  
- 
+
   .p-bienvenue {
-  
-      font-family: 'Oswald', sans-serif;
-      color: #31455d;
-      font-size: 25px;
-      text-transform: uppercase;
-      font-weight: bold;
-  
+    font-family: "Oswald", sans-serif;
+    color: #31455d;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
   }
-  
+
   .logo {
-      order: 1;
-      flex: 1;
-      display: flex;
-      justify-content: center;
+    order: 1;
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
-  
+
   .home-img {
-      display: block;
-      max-width: 100%;
-      height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
-  
+
   .bienvenue {
-      display: none;
-  
+    display: none;
   }
 
-
-  nav
-  {
-      height: 60px;
+  nav {
+    height: 60px;
   }
 
-  nav .main_pages 
-  {
-      display: none;
-      flex-direction: column;
-      background: #31455d;
-      height: 220px;
+  nav .main_pages {
+    display: none;
+    flex-direction: column;
+    background: #31455d;
+    height: 220px;
   }
 
   nav .main_pages a {
-      width: 70%;
-      background: #5A5766;
-      border-bottom: 1px dotted;
-      color: white;
+    width: 70%;
+    background: #5a5766;
+    border-bottom: 1px dotted;
+    color: white;
   }
 
   nav .main_pages a:hover {
-      background: #48435C;
+    background: #48435c;
   }
 
-  
-
-  .burger
-  {
-      width: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      font-size: 40px;
-      color: white;
-      cursor: pointer;
+  .burger {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
   }
 
   #toggle:checked + .main_pages {
-      display: flex;
+    display: flex;
   }
 
-
-
-  
-  
   .icons {
-      order: 2;
-      flex: 1;
-      text-align: center;
-      font-size: 2rem;
-  }
-  
-  .icons a {
-      color: #31455d;
-      text-decoration: none;
-  }
-  
-  .icons a:hover {
-  
-      color:#fbb52d;
+    order: 2;
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
   }
 
+  .icons a {
+    color: #31455d;
+    text-decoration: none;
+  }
+
+  .icons a:hover {
+    color: #fbb52d;
+  }
 }
 
 /* ====FIN MEDIAS QUERIES ===== */
