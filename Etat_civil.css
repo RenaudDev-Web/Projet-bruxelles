@@ -191,30 +191,26 @@ h2{
 }
 
 .carteidentite{
-    border-style: dotted;
-    margin-top: 2%;
-    width: 1300px;
-    margin-left: 7%;
-    padding: 3%;
-   
+  border-style: dotted;
+  width: 80%;
+  margin: auto;
+  padding: 1%;
 }
 
 .passeport{
-    border-style: dotted;
-    margin-top: 2%;
-    width: 1300px; 
-    margin-left: 7%;
-    padding: 3%;
+  border-style: dotted;
+  width: 80%;
+  margin: auto;
+  padding: 1%;
 
 }
 
 .serviceetatcivil{
-    border-style: dotted;
-    margin-top: 2%;
-    width: 1300px; 
-    margin-left: 7%;
-    margin-bottom: 7%;
-    padding: 3%;
+  border-style: dotted;
+  width: 80%;
+  margin: auto;
+  padding: 1%;
+  margin-bottom: 1em;
 
 }
 
