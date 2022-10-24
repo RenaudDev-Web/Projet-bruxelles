@@ -1,7 +1,9 @@
 
 body{
     font-family: 'Roboto Slab', serif;
+    margin: 0;
     overflow-x: hidden;
+    position: relative;
 }
 
 
@@ -129,29 +131,29 @@ label, #toggle
     
     position: absolute;
     width: 114%;
-z-index: -1;
-opacity: 0.75;
-left: 0;
+    z-index: -1;
+    opacity: 0.75;
+    left: 0;
 top: 0;
 }
 
-#background1{
-    width: 90%;
-    height: auto;
-    width: 120%;
-    
-}
+
 
 main{
-    
     background: rgba(245, 245, 245, 0.925);
     width: 80%;
     margin: 10px auto;
     margin-top: 7%;
     min-height: 800px;
-    padding: 15px;
     border-radius: 15px;
     box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.260);
+}
+
+#background1{
+   position: absolute;
+   height: 1600px;
+   width: 100%;
+   left: -1%;
 }
 
 .date{
@@ -514,10 +516,7 @@ opacity: 0.75;
         background-color: #31455d;
     }
 
-    #background1{
-       display: none; 
-    }
-
+    
 .imagea{
     width: 70%;
     margin-left: 0;
@@ -538,7 +537,7 @@ opacity: 0.75;
     top: 150%;
     left: 33.5%;
     width: 25%;
-    
+    margin-bottom: 4%;
 }
 
 .texte{
@@ -616,13 +615,7 @@ opacity: 0.75;
 
 }
 
-@media screen and (max-width:1350px){
-    
-#background1{
-    width: 160%;
-}
 
-}
     
 
 
