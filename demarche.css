@@ -1,4 +1,3 @@
-
 header.sticky {
 
   width: 100%;
@@ -52,57 +51,40 @@ header #head-wrap .wrap {
 
 }
 
-.navbar{
-  flex-basis: 100%;
-  padding-bottom: 0.1rem;
-  padding-top: 00.1rem;
-  justify-content: space-between;
-  background-color: #31455d;
-  text-align: center;
 
-
-}
-.navbar a{
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-.navbar ul{
-  align-items: center;
-  list-style: none;
-}
-.navbar li{
-  display: inline;
-  padding: 0 3% 0 3%;
-}
-
-
-
-.navbar li span{
-  word-spacing: 2px;
-}
-.navbar li a {
-  color: white;
-  position: relative;
-  text-decoration: none;
-}
-.navbar li a::before {
-  content: '';
-  position: absolute;
+nav 
+{
+  /* margin: 100px auto; */
   width: 100%;
-  height: 1px;
-  border-radius: 4px;
-  background-color: white;
-  bottom: 0;
-  left: 0;
-  transform-origin: none;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  height: 60px;
+  background: #48435C;
 }
-.navbar li a:hover::before {
-  transform-origin: center;
-  transform: scaleX(1);
+
+nav .main_pages 
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .main_pages a 
+{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  color: white;
+}
+
+nav a:hover 
+{
+
+  background: #fbb52d;
+  color: #303030
 }
 
 
@@ -122,15 +104,134 @@ header #head-wrap .wrap {
   color:#fbb52d;
 }
 
+label, #toggle
+{
+  display: none;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media screen and (max-width: 480px) {
+
+
+  header.sticky {
+
+      width: 100%;
+      background: white;
+  }
+  
+  header #head-wrap {
+  
+      display: flex;
+      flex-direction: column;
+  }
+  
+ 
+  .p-bienvenue {
+  
+      font-family: 'Oswald', sans-serif;
+      color: #31455d;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+  
+  }
+  
+  .logo {
+      order: 1;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .home-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .bienvenue {
+      display: none;
+  
+  }
+
+
+  nav
+  {
+      height: 60px;
+  }
+
+  nav .main_pages 
+  {
+      display: none;
+      flex-direction: column;
+      background: #31455d;
+      height: 220px;
+  }
+
+  nav .main_pages a {
+      width: 70%;
+      background: #5A5766;
+      border-bottom: 1px dotted;
+      color: white;
+  }
+
+  nav .main_pages a:hover {
+      background: #48435C;
+  }
+
+  
+
+  label 
+  {
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+  }
+
+  #toggle:checked + .main_pages {
+      display: flex;
+  }
+
+
+
+  
+  
+  .icons {
+      order: 2;
+      flex: 1;
+      text-align: center;
+      font-size: 2rem;
+  }
+  
+  .icons a {
+      color: #31455d;
+      text-decoration: none;
+  }
+  
+  .icons a:hover {
+  
+      color:#fbb52d;
+  }
+
+}
+
 
 /*Ne rien écrire au dessus*/
 body{
-  font-family: 'roboto';
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  margin: 0;
 }
 h1{
   text-align: center;
- font-family:"Oswald";
- color: #31455D;
+  font-family: 'Oswald', sans-serif;
+  color: #31455D;
  font-size: 25px;
  text-transform: uppercase;
  margin-top: 2em;
@@ -152,8 +253,8 @@ h1{
 
   .fleche{
     width: 25%;
-   margin-left:74%;
-   margin-bottom:5%;
+   margin-left:70%;
+   
    
     
   }
@@ -174,7 +275,7 @@ h1{
   margin: 100px;
   padding-left: 5%;
   font-weight: bold;
-  font-family: 'roboto';
+  font-family: 'Roboto Slab', serif;
 }
 
 .partie2 p {
@@ -183,7 +284,7 @@ h1{
   margin: 100px;
   padding-left: 5%;
   font-weight: bold;
-  font-family: 'roboto';
+  font-family: 'Roboto Slab', serif;
 }
 
 .etat{
@@ -197,8 +298,8 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin-left: 10%;
-    width: 70%;
+    
+    
     height: 20%;
     background-color: #fbb52d;
   
@@ -219,7 +320,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    margin-bottom: 2em;
+    
     border-top: 1px dotted #000;
   }
  
@@ -238,7 +339,7 @@ h1{
 }
 
 .footeradresse{
-
+    
     width: 50%;
     background-color: #31455d;
     color: white;
@@ -280,7 +381,7 @@ opacity: 0.75;
     width: 50%;
     align-items: center;
     background-color: #31455d;
-    color: white;
+    color: white;    
 
 }
 
