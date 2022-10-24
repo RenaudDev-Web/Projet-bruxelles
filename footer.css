@@ -15,7 +15,7 @@ footer{
     width: 50%;
     background-color: #31455d;
     color: white;
-    min-height: 30vh;
+    /* min-height: 30vh; */
     padding-bottom: 10px;
 }
 
@@ -109,3 +109,22 @@ opacity: 0.75;
 /* ==== RESPONSIVE A VENIR ====
 
 @florian */
+
+@media screen and (max-width: 480px) {
+
+    .footeradresse{
+        width: 100%;
+        margin-bottom: 2%;
+      }
+      
+      .footerhoraire{
+        width: 100%;
+        margin-bottom: 2%;
+      }
+      
+      a.event-footer{
+        width: 30%;
+        background-color: #405670;
+      }
+
+}

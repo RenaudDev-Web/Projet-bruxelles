@@ -2,15 +2,24 @@
 
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
 
-    <link href ="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel ="stylesheet">
-    <link href ="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel ="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>Contactez nous</title>
   </head>
@@ -20,28 +29,47 @@
       <div id="head-wrap">
         <div class="wrap">
           <a class="logo" href="index.html">
-            <img src="medias/logo_bx.png" alt="logo brussels">
+            <img
+              class="img-logo"
+              src="medias/logo_bx.png"
+              alt="logo brussels"
+            />
           </a>
+
           <div class="bienvenue">
-            <h1>Bienvenue, Welkom, Welcome</h1>
+            <p class="p-bienvenue">Bienvenue, Welkom, Welcome</p>
           </div>
+
           <div class="icons">
-            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
-            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            <a
+              href="https://www.instagram.com/bxl_online/"
+              class="fa fa-instagram"
+            ></a>
+            <a
+              href="https://www.facebook.com/BXLvilledebruxelles/"
+              class="fa fa-facebook"
+            ></a>
+            <a
+              href="https://twitter.com/VilleBruxelles"
+              class="fa fa-twitter"
+            ></a>
           </div>
         </div>
       </div>
 
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">La ville</a></li>
-          <li><a href="#">Actions et projets</a></li>
-          <li><a href="#">Brussels 2035</a></li>
-          <li><a href="#">Culture</a></li>
-          <li><a href="#">Participer</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+      <nav>
+        <label class="burger" for="toggle">☰</label>
+
+        <input type="checkbox" id="toggle" />
+
+        <div class="main_pages">
+          <a href="demarche.html">Mes demarches</a>
+          <a href="événement.html">Culture</a>
+          <a href="#">Ma ville</a>
+          <a href="#">Brussels 2035</a>
+          <a href="#">Je participe</a>
+          <a href="Contact.html">Contact</a>
+        </div>
       </nav>
     </header>
 
@@ -49,7 +77,7 @@
       <div class="wrap">
         <div class="centre">
           <h1>Nous contacter</h1>
-          <p>Vous avez plusieurs posibilité afin de nous contacter :</p>
+          <p>Vous avez plusieurs possibilité afin de nous contacter :</p>
           <a href="tel:0253593017" class="info">Info Mairie</a>
           <a href="mailto:BruxellesBE@mairie.eu" class="info"
             >Adresse email Mairie</a
@@ -58,9 +86,8 @@
             Vous pouvez également envoyer un courrier à l'adresse suivante :
           </p>
           <p>
-            Hôtel de Ville Bruxelles,<br>
-            Place XXX <br>
-            00000 Bruxelles
+            Hôtel de Ville Bruxelles,<br />
+            Grand-Place-1000 Bruxelles <br />
           </p>
         </div>
 
@@ -81,8 +108,9 @@
               name="prenom"
               class="input"
               placeholder="Entrez votre prénom"
-              maxlength="300" >
-          
+              maxlength="300"
+            />
+
             <label for="name" class="label">Nom</label>
             <input
               type="text"
@@ -90,7 +118,8 @@
               name="name"
               class="input"
               placeholder="Entrez votre nom"
-              maxlength="300">
+              maxlength="300"
+            />
             <label for="email" class="label">E-mail</label>
             <input
               type="email"
@@ -98,7 +127,8 @@
               id="email"
               class="input"
               placeholder="Entrez votre Email"
-              required>
+              required
+            />
             <label for="demande" class="input"
               >Quel type de demande avez-vous ?</label
             >
@@ -115,7 +145,7 @@
               cols="30"
               rows="10"
             ></textarea>
-            <input id="envoie" type="submit" value="Envoyer" name="Envoyer">
+            <input id="envoie" type="submit" value="Envoyer" name="Envoyer" />
           </form>
         </div>
 
