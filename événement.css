@@ -140,7 +140,7 @@ label, #toggle{
   margin: 10px auto;
   padding-top: 1%;
   width: 25%;
-  border: 1px solid;
+  border: 1px dotted;
   background-color: #f7f7f7;
 }
 
@@ -665,6 +665,7 @@ opacity: 0.75;
       background: #31455d;
       height: 220px;
       padding-bottom: 2%;
+      
   }
 
   nav .main_pages a{

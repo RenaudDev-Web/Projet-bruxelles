@@ -383,10 +383,11 @@ footer a {
   }
 
   nav .main_pages a {
-    width: 70%;
+    width: 100%;
     background: #5a5766;
     border-bottom: 1px dotted;
     color: white;
+    z-index: 99;
   }
 
   nav .main_pages a:hover {
@@ -423,6 +424,22 @@ footer a {
   .icons a:hover {
     color: #fbb52d;
   }
+
+  .footeradresse{
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  
+  .footerhoraire{
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  
+  a.event-footer{
+    width: 30%;
+    background-color: #405670;
+  }
+
 }
 
 /* ====FIN MEDIAS QUERIES ===== */
