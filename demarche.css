@@ -218,13 +218,9 @@ label, #toggle
   
       color:#fbb52d;
   }
+}
 
 
-  p.barre{
-  display: flex;
-  flex-direction: column;
-}
-}
 
 
 
@@ -253,6 +249,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 
@@ -460,4 +457,23 @@ opacity: 0.75;
     padding: 14px 15px;
     width: 20%;
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+}
+
+@media screen and (max-width: 480px) {
+  .fleche{
+    width: 30px;
+  }
+
+  .demarche{
+    flex-basis: 45%;
+  }
+
+  .demarches{
+    margin: 10px;
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+  #banniere{
+    display: none;
+  }
 }
