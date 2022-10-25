@@ -584,6 +584,8 @@ opacity: 0.75;
 
     .texte4{
         margin-bottom: 5%;
+        width: 97%;
+    padding-left: 3%;
     }
 
 .imagea{
@@ -610,7 +612,8 @@ opacity: 0.75;
 }
 
 .texte{
-    width: 100%;
+    width: 97%;
+    padding-left: 3%;
 }
 
 }

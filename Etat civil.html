@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etat civil</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="Etat_civil.css">
 </head>
 <body>
+    
     <header class="sticky">
 
         <div id="head-wrap">
@@ -43,21 +44,28 @@
     
         </div>
     
-        <nav class="navbar">
+        <nav>
     
-            <ul>
-                <li><a href="#">La ville</a></li>
-                <li><a href="#">Actions et projets</a></li>
-                <li><a href="#">Brussels 2035</a></li>
-                <li><a href="#">Culture</a></li>
-                <li><a href="#">Participer</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul> 
+            <label for="toggle">☰</label>
+            
+            <input type="checkbox" id="toggle">
+                
+            <div class="main_pages">
     
-    
+                <a href="demarche.html">Mes demarches</a>
+                <a href="événement.html">Culture</a>
+                <a href="#">Ma ville</a>
+                <a href="#">Brussels 2035</a>
+                <a href="#">Je participe</a>
+                <a href="Contact.html">Contact</a>
+                
+            </div>
+            
         </nav>
     
-      </header>
+    </header>
+    
+    
     
      
       <!--ne rien écrire au dessus-->

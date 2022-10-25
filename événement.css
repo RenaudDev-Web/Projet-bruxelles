@@ -122,12 +122,48 @@ label, #toggle{
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
   font-size: 2em;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 .select{
   text-align: center;
-  padding-bottom: 5em;
+  padding-bottom: 7%;
 }
+
+.select p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.box{
+  margin: 10px auto;
+  padding-top: 1%;
+  width: 25%;
+  border: 1px dotted;
+  background-color: #f7f7f7;
+}
+
+.position{
+  margin-bottom: 5%;
+}
+
+#Date{
+  height: 30px;
+  width: 30%;
+  text-align: center;
+  
+}
+
+#Année{
+  height: 30px;
+  width: 30%;
+  text-align: center;
+}
+
+
+/*flex*/
+
 
 .flex{
   display: flex;
@@ -136,6 +172,7 @@ label, #toggle{
   gap: 3em;
   text-align: center;
   margin-bottom: 3%;
+  margin-top: 2%;
   padding-left: 7%;
   padding-right: 7%;
 }
@@ -147,6 +184,10 @@ label, #toggle{
   text-align: center;
   margin-bottom: 3%;
 }
+
+
+/* Image
+ */
 
 .image1, .image2, .image3, .image4{
   width: 70%;
@@ -161,6 +202,9 @@ label, #toggle{
 .image2:hover, .image4:hover{
   opacity: 0.75;
 }
+
+/* Texte */
+
 
 .p5,.p6{
   padding-top: 1.5em;
@@ -180,31 +224,34 @@ h3{
   color: white;
 }
 
-.texte a, .texte1 a, .parade a,{
+.texte a,.parade a{
   position: relative;
 }
 
 h3:after {    
   background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   position: absolute;
-  top: 68%;
   background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
 }
 
-h3:hover:after { 
-  width: 20%; 
-  
+#festivalh3:hover:after { 
+  width: 160px;
 }
 
+#rollerh3:hover:after{
+width: 100px;
+}
 
+#zinekeh3:hover:after{
+  width: 140px;
+}
 
-
+#irish3:hover:after{
+  width: 110px;
+}
 
 .texte, .texte1{
 padding-left: 15%;
@@ -373,7 +420,7 @@ a.button3{
 .prev, .next {
   cursor: pointer;
   position: absolute;        
-  top: 43%;
+  top: 42%;
   transform: translateY(-50%);
   width: 10%;
   height: 15%;
@@ -381,9 +428,9 @@ a.button3{
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: #fbb52D;
-  font-size: 30px;
-  background-color: rgba(0,0,0,0);
+  color: #ffffff;
+  font-size: 35px;
+  background-color: #fbb52d;
   transition: background-color 0.6s ease;
 
 }
@@ -562,9 +609,9 @@ opacity: 0.75;
 
 /*header*/
 
-
+  
   header.sticky {
-
+      
       width: 100%;
       background: white;
   }
@@ -610,26 +657,28 @@ opacity: 0.75;
       height: 60px;
   }
 
-  nav .main_pages 
+  nav .main_pages
   {
+    position: relative;
       display: none;
       flex-direction: column;
       background: #31455d;
       height: 220px;
+      padding-bottom: 2%;
+      
   }
 
-  nav .main_pages a {
+  nav .main_pages a{
+    
       width: 70%;
       background: #5A5766;
       border-bottom: 1px dotted;
       color: white;
   }
 
-  nav .main_pages a:hover {
+  nav .main_pages a:hover{
       background: #48435C;
   }
-
-  
 
   label 
   {
@@ -645,7 +694,6 @@ opacity: 0.75;
 
   #toggle:checked + .main_pages {
       display: flex;
-      
   }
   
   .icons {
@@ -668,6 +716,22 @@ opacity: 0.75;
 
 /*Actualités*/
 
+
+.box{
+  width: 85%;
+}
+
+#Date{
+  width: 30%;
+}
+
+#Année{
+  width: 30%;
+}
+
+.flex{
+  margin-top: 20%;
+}
   
     .flex,.flex1{
       display: block;
@@ -704,6 +768,11 @@ opacity: 0.75;
     margin-top: 10%;
     min-height: 95vh;
   }
+
+  .parade{
+    padding-left: 10%;
+    width: 90%;
+  }
   
   a.button1, a.button2, a.button3, a.button4{
     width: 50%;
@@ -713,7 +782,20 @@ opacity: 0.75;
     padding-right: 0;
   }
 
+  .prev, .next{
+    height: 12%;
+    width: 15%;
+  }
 
+  .prev:hover, .next:hover {
+    background-color: #fbb52d;
+  }
+
+  .textactu{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
 
     /*footer*/
 

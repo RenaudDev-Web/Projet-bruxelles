@@ -109,120 +109,11 @@ label, #toggle
   display: none;
 }
 
-/* ===== RESPONSIVE ===== */
-
-@media screen and (max-width: 480px) {
-
-
-  header.sticky {
-
-      width: 100%;
-      background: white;
-  }
-  
-  header #head-wrap {
-  
-      display: flex;
-      flex-direction: column;
-  }
-  
- 
-  .p-bienvenue {
-  
-      font-family: 'Oswald', sans-serif;
-      color: #31455d;
-      font-size: 25px;
-      text-transform: uppercase;
-      font-weight: bold;
-  
-  }
-  
-  .logo {
-      order: 1;
-      flex: 1;
-      display: flex;
-      justify-content: center;
-  }
-  
-  .home-img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-  }
-  
-  .bienvenue {
-      display: none;
-  
-  }
-
-
-  nav
-  {
-      height: 60px;
-  }
-
-  nav .main_pages 
-  {
-      display: none;
-      flex-direction: column;
-      background: #31455d;
-      height: 220px;
-  }
-
-  nav .main_pages a {
-      width: 70%;
-      background: #5A5766;
-      border-bottom: 1px dotted;
-      color: white;
-  }
-
-  nav .main_pages a:hover {
-      background: #48435C;
-  }
-
-  
-
-  label 
-  {
-      width: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      font-size: 40px;
-      color: white;
-      cursor: pointer;
-  }
-
-  #toggle:checked + .main_pages {
-      display: flex;
-  }
 
 
 
-  
-  
-  .icons {
-      order: 2;
-      flex: 1;
-      text-align: center;
-      font-size: 2rem;
-  }
-  
-  .icons a {
-      color: #31455d;
-      text-decoration: none;
-  }
-  
-  .icons a:hover {
-  
-      color:#fbb52d;
-  }
-
-}
 
 
-/*Ne rien écrire au dessus*/
 body{
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
@@ -230,7 +121,7 @@ body{
 }
 h1{
   text-align: center;
-  font-family: 'Oswald' sans-serif;
+  font-family: 'Oswald';
   color: #31455D;
  font-size: 25px;
  text-transform: uppercase;
@@ -248,16 +139,11 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 
-  .fleche{
-    width: 25%;
-   margin-left:70%;
-   
-   
-    
-  }
+
 
   /*p{
     font-size: 17px;
@@ -268,7 +154,7 @@ h1{
     font-family: 'roboto';
    
   }*/
-
+/*
 .partie1 p {
   font-size: 14px;
   color:  #ffffff;
@@ -298,22 +184,21 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    
-    
-    height: 20%;
+    width: 60%;
+    height: 25%;
     background-color: #fbb52d;
   
     
     }
-    
+    */
 
   
-
+/*
   .partie1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    border-top: 1px dotted #000;
+    
   }
 
   .partie2{
@@ -321,10 +206,40 @@ h1{
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     
-    border-top: 1px dotted #000;
   }
+ */
  
- 
+.demarche{
+  background-color: #fbb52d;
+  text-decoration:none ;
+  color: white;
+ font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px;
+  flex-basis: 20%;
+  box-sizing: border-box;
+  display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.fleche{
+  width: 45px;
+
+}
+.demarches{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 60px;
+
+}
+
+.demarche:hover{
+  background-color: #31455D;
+}
   /*Ne rien écrire en dessous*/
   footer{
     font-family: 'Roboto Slab', serif;
@@ -350,6 +265,7 @@ h1{
 .footerh2{
 text-align: center;
 }
+
 
 .footerp{
     text-align: center;
@@ -432,6 +348,153 @@ opacity: 0.75;
     padding: 14px 15px;
     width: 20%;
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+}
+
+@media screen and (max-width: 480px) {
+  .fleche{
+    width: 30px;
+  }
+
+  .demarche{
+    flex-basis: 45%;
+  }
+
+  .demarches{
+    margin: 10px;
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+  #banniere{
+    display: none;
+  }
+
+  .footeradresse{
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  
+  .footerhoraire{
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  
+  a.event-footer{
+    width: 30%;
+    background-color: #405670;
+  }
+  
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media screen and (max-width: 480px) {
+
+
+  header.sticky {
+
+      width: 100%;
+      background: white;
+  }
+  
+  header #head-wrap {
+  
+      display: flex;
+      flex-direction: column;
+  }
+  
+ 
+  .p-bienvenue {
+  
+      font-family: 'Oswald', sans-serif;
+      color: #31455d;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+  
+  }
+  
+  .logo {
+      order: 1;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .home-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .bienvenue {
+      display: none;
+  
+  }
+
+
+  nav
+  {
+      height: 60px;
+  }
+
+  nav .main_pages 
+  {
+      display: none;
+      flex-direction: column;
+      background: #31455d;
+      height: 220px;
+  }
+
+  nav .main_pages a {
+      width: 100%;
+      background: #5A5766;
+      border-bottom: 1px dotted;
+      color: white;
+      z-index: 99;
+  }
+
+  nav .main_pages a:hover {
+      background: #48435C;
+  }
+
+  
+
+  label 
+  {
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+  }
+
+  #toggle:checked + .main_pages {
+      display: flex;
+  }
+
+
+
+  
+  
+  .icons {
+      order: 2;
+      flex: 1;
+      text-align: center;
+      font-size: 2rem;
+  }
+  
+  .icons a {
+      color: #31455d;
+      text-decoration: none;
+  }
+  
+  .icons a:hover {
+  
+      color:#fbb52d;
+  }
 }
 
 
