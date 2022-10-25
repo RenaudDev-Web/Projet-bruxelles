@@ -122,11 +122,18 @@ label, #toggle{
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
   font-size: 2em;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 .select{
   text-align: center;
   padding-bottom: 7%;
+}
+
+.select p{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .box{
@@ -135,6 +142,10 @@ label, #toggle{
   width: 25%;
   border: 1px solid;
   background-color: #f7f7f7;
+}
+
+.position{
+  margin-bottom: 5%;
 }
 
 #Date{
@@ -174,6 +185,10 @@ label, #toggle{
   margin-bottom: 3%;
 }
 
+
+/* Image
+ */
+
 .image1, .image2, .image3, .image4{
   width: 70%;
   height: auto;
@@ -187,6 +202,9 @@ label, #toggle{
 .image2:hover, .image4:hover{
   opacity: 0.75;
 }
+
+/* Texte */
+
 
 .p5,.p6{
   padding-top: 1.5em;
@@ -212,20 +230,27 @@ h3{
 
 h3:after {    
   background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   position: absolute;
-  top: 68%;
   background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
 }
 
-h3:hover:after { 
-  width: 20%; 
-  
+#festivalh3:hover:after { 
+  width: 160px;
+}
+
+#rollerh3:hover:after{
+width: 100px;
+}
+
+#zinekeh3:hover:after{
+  width: 140px;
+}
+
+#irish3:hover:after{
+  width: 110px;
 }
 
 .texte, .texte1{
@@ -584,7 +609,7 @@ opacity: 0.75;
 
 /*header*/
 
-
+  
   header.sticky {
       
       width: 100%;
@@ -632,26 +657,27 @@ opacity: 0.75;
       height: 60px;
   }
 
-  nav .main_pages 
+  nav .main_pages
   {
+    position: relative;
       display: none;
       flex-direction: column;
       background: #31455d;
       height: 220px;
+      padding-bottom: 2%;
   }
 
-  nav .main_pages a {
+  nav .main_pages a{
+    
       width: 70%;
       background: #5A5766;
       border-bottom: 1px dotted;
       color: white;
   }
 
-  nav .main_pages a:hover {
+  nav .main_pages a:hover{
       background: #48435C;
   }
-
-  
 
   label 
   {
@@ -667,7 +693,6 @@ opacity: 0.75;
 
   #toggle:checked + .main_pages {
       display: flex;
-      
   }
   
   .icons {
@@ -690,6 +715,7 @@ opacity: 0.75;
 
 /*Actualités*/
 
+
 .box{
   width: 85%;
 }
@@ -700,6 +726,10 @@ opacity: 0.75;
 
 #Année{
   width: 30%;
+}
+
+.flex{
+  margin-top: 20%;
 }
   
     .flex,.flex1{
@@ -736,6 +766,11 @@ opacity: 0.75;
   .imagetexte3{
     margin-top: 10%;
     min-height: 95vh;
+  }
+
+  .parade{
+    padding-left: 10%;
+    width: 90%;
   }
   
   a.button1, a.button2, a.button3, a.button4{
