@@ -219,10 +219,15 @@ label, #toggle
       color:#fbb52d;
   }
 
+
+  p.barre{
+  display: flex;
+  flex-direction: column;
+}
 }
 
 
-/*Ne rien écrire au dessus*/
+
 body{
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
@@ -251,13 +256,7 @@ h1{
 }
 
 
-  .fleche{
-    width: 25%;
-   margin-left:70%;
-   
-   
-    
-  }
+
 
   /*p{
     font-size: 17px;
@@ -268,7 +267,7 @@ h1{
     font-family: 'roboto';
    
   }*/
-
+/*
 .partie1 p {
   font-size: 14px;
   color:  #ffffff;
@@ -298,22 +297,21 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    
-    
-    height: 20%;
+    width: 60%;
+    height: 25%;
     background-color: #fbb52d;
   
     
     }
-    
+    */
 
   
-
+/*
   .partie1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    border-top: 1px dotted #000;
+    
   }
 
   .partie2{
@@ -321,10 +319,40 @@ h1{
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     
-    border-top: 1px dotted #000;
   }
+ */
  
- 
+.demarche{
+  background-color: #fbb52d;
+  text-decoration:none ;
+  color: white;
+ font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px;
+  flex-basis: 20%;
+  box-sizing: border-box;
+  display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.fleche{
+  width: 45px;
+
+}
+.demarches{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 60px;
+
+}
+
+.demarche:hover{
+  background-color: #31455D;
+}
   /*Ne rien écrire en dessous*/
   footer{
     font-family: 'Roboto Slab', serif;
@@ -433,7 +461,3 @@ opacity: 0.75;
     width: 20%;
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
 }
-
-
-
-
