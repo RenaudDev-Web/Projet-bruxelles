@@ -380,10 +380,13 @@ opacity: 0.75;
   }
 
   nav .main_pages a {
-      width: 70%;
+      width: 100%;
       background: #5A5766;
       border-bottom: 1px dotted;
       color: white;
+      z-index: 99;
+      top: 0;
+
   }
 
   nav .main_pages a:hover {
