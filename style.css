@@ -10,8 +10,9 @@ body{
 
 /* ==== HEADER ===== */
 
-header.sticky {
 
+header.sticky {
+   
     width: 100%;
     background: white;
 }
@@ -56,6 +57,24 @@ header #head-wrap .wrap {
     height: auto;
 }
 
+img.seek-img {
+
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 20px;
+    padding: 10px;
+   
+}
+
+/* .seek-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 20px;
+    padding: 10px;
+} */
+
 .bienvenue {
     flex: 1;
     text-align: center;
@@ -65,7 +84,7 @@ header #head-wrap .wrap {
 }
 
 
-nav 
+ nav 
 {
     /* margin: 100px auto; */
     width: 100%;
@@ -115,7 +134,7 @@ nav a:hover
 .icons a:hover {
 
     color:#fbb52d;
-}
+} 
 
 
 /* === MAIN === */
@@ -147,8 +166,8 @@ section .bg-main {
     align-items: center;
     vertical-align: middle;
     justify-content: center;
-    /* margin-bottom: 20px; */
-    /* padding-top: 220px; */
+    position: relative;
+   
 
 }
 
@@ -160,7 +179,7 @@ section .bg-main {
     background-color: #FFF;
     color: #7e7e7e;
     width: 520px;
-    /* max-width: 100%; */
+    max-width: 100%;
     font-size: 1rem;
     font-weight: 400;
 
@@ -169,7 +188,7 @@ section .bg-main {
 .recherche .loupe {
 
     
-    right: 0;
+    /* right: 0; */
     width: 30px;
     height: 30px;
     display: block;
@@ -179,10 +198,11 @@ section .bg-main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
     border: none;
     background-color: white;
     cursor: pointer;
+    position: absolute;
 
 }
 
@@ -190,13 +210,19 @@ section .bg-main {
     padding-right: 10px;
 }
 
-/* form.seek {
+a.loupe {
+left: 550px;
+bottom: 17px;
+}
+
+form.seek {
 
     display: flex;
     align-items: center;
     vertical-align: middle;
     justify-content: center;
-} */
+    margin: 0;
+}
 
 
 
@@ -212,11 +238,6 @@ section .bg-main {
 
 }
 
-#services {
-
-    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
-
-}
 
 .services {
 
@@ -404,13 +425,23 @@ a.services-clic:hover .picto {
 
 .event-picto img:hover {
   
-    opacity: 0.7;
-    transition: ease-in 0.5s;
+    background-color: rgba(0,0,0,0.6);
+
+ }
+
+ .event p {
+    text-align: center;
  }
 
 p.event-text {
     text-align: left;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a p.event-text {
+
+    color: #7e7e7e;
 }
 
 .event {
@@ -418,26 +449,76 @@ p.event-text {
     padding: 1%;
 }
 
-a.event-link {
+.event a {
+
+    text-decoration: none;
+
+}
+
+/* a.event-link {
         background-color: #FBB52D;
         color: #fff;
         text-decoration: none;
         padding: 14px 15px;
-        /* display: inline-flex;
-        justify-content: center;
-        align-items: center; */
         width: 70%;
-        /* box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%); */
-
 }
 
-h3.event {
+.event-link {
 
-    font-size: 30px;
+    background-color: #FBB52D;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 70%;
+} */
+
+.event h3 {
+
+    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
 
 }
+
+
+
+.hover-image-event {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    transition: opacity 0.25s ease-in-out;
+    
+    background-color: rgba(0,0,0,0.3); 
+    color: white;
+    padding: 30px;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hover-image-event p {
+    position: absolute;
+    color: white;
+    padding: 30px;
+    
+  }
+
+  .hover-image-event p:hover {
+    background-color: #9999;
+    transition: ease-in 0.5s;
+
+  }
+
 
 
 /* ==== NEWSPAPER ==== */
@@ -474,6 +555,9 @@ h3.event {
 .event-news a {
     text-decoration: none;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img.pdf {
@@ -482,32 +566,26 @@ img.pdf {
 }
 
 .overlay-image {
-    position: relative; /* Important pour positionner le contenu par dessus, relatif à l'élément */
-    display: inline-block; /* Prendra la forme de son contenu */
+    position: relative; 
+    display: inline-block;
   }
   
   .overlay-image img {
-    vertical-align: middle; /* Ou display: block, pour enlever l'espace blanc */
+    vertical-align: middle; 
   }
   
   .overlay-image .hover-image {
-    /* Positionnement du contenu hover */
+
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    
-    /* Effets de transition */
-    opacity: 0; /* On cache l'élément via son opacité */
-    transition: opacity 0.25s ease-in-out; /* Effet de transition sur le hover */
-    
-    /* Style du contenu hover */
-    background-color: rgba(0,0,0,0.6); /* Couleur par défaut */
+    opacity: 0; 
+    transition: opacity 0.25s ease-in-out; 
+    background-color: rgba(0,0,0,0.6); 
     color: white;
     padding: 30px;
-    
-    /* Centrer le contenu */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -516,21 +594,17 @@ img.pdf {
   }
   
   .overlay-image:hover .hover-image {
-    opacity: 1; /* Lors du hover, on remet l'opacité à 1 */
+    opacity: 1; 
   }
 
   .hover-image h3 {
 
-    font-family: 'Oswald', sans-serif;
-    color: #fff;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-
+    color: #fff;
 
   }
-
-
 
 
 
@@ -649,6 +723,13 @@ label, #toggle
     display: none;
 }
 
+label#reche {
+
+    /* margin: 0;
+    padding: 0; */
+    display: none;
+}
+
 #myBtn {
     display: none;
     position: fixed;
@@ -673,8 +754,11 @@ label, #toggle
 
 /* ===== RESPONSIVE ===== */
 
+
 @media screen and (max-width: 480px) {
 
+
+    /* === HEADER === */
 
     header.sticky {
 
@@ -717,53 +801,6 @@ label, #toggle
     
     }
 
-
-    nav
-    {
-        height: 60px;
-    }
- 
-    nav .main_pages 
-    {
-        display: none;
-        flex-direction: column;
-        background: #31455d;
-        height: 220px;
-    }
- 
-    nav .main_pages a {
-        width: 70%;
-        background: #5A5766;
-        border-bottom: 1px dotted;
-        color: white;
-    }
-
-    nav .main_pages a:hover {
-        background: #48435C;
-    }
-
-    
- 
-    label 
-    {
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        font-size: 40px;
-        color: white;
-        cursor: pointer;
-    }
- 
-    #toggle:checked + .main_pages {
-        display: flex;
-    }
-
-
-
-    
-    
     .icons {
         order: 2;
         flex: 1;
@@ -782,17 +819,197 @@ label, #toggle
     }
 
 
+
+/* === MENU === */
+
+
+header.sticky {
+
+    width: 100%;
+    background: white;
+}
+
+header #head-wrap {
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.p-bienvenue {
+
+    font-family: 'Oswald', sans-serif;
+    color: #31455d;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.logo {
+    order: 1;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.bienvenue {
+    display: none;
+
+}
+
+
+nav
+{
+    height: 60px;
+}
+
+nav .main_pages 
+{
+    display: none;
+    flex-direction: column;
+    background: #31455d;
+    height: 220px;
+}
+
+nav .main_pages a {
+    width: 100%;
+    background: #5A5766;
+    border-bottom: 1px dotted;
+    color: white;
+    z-index: 99;
+}
+
+nav .main_pages a:hover {
+    background: #48435C;
+}
+
+
+
+label 
+{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+#toggle:checked + .main_pages {
+    display: flex;
+}
+
+
+.icons {
+    order: 2;
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.icons a {
+    color: #31455d;
+    text-decoration: none;
+}
+
+.icons a:hover {
+
+    color:#fbb52d;
+}
+
+
+/* === bg main recherche === */
+
+
+    section .bg-main {
+       
+        height: 150px;
+      
+    }
+
+    label#recherche {
+
+        /* margin: 0;
+        padding: 0; */
+        display: none;
+    }
+
+    .recherche {
+
+        z-index: 10;
+    }
+   
+    .recherche .seek {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        justify-content: center;
+        
+    }
+
+    .recherche .seek input {
+        border: none;
+        border-radius: 5px;
+        padding: 20px 40px;
+        background-color: #FFF;
+        color: #7e7e7e;
+        width: 100%;
+    
+    }
+
+    
+    form.seek {
+
+        margin: 0;
+    }
+/* 
+    .seek button {
+
+        top: 50%;
+        right: 0;
+        width: 100px;
+        height: 100%;
+        display: block;
+        background-size: 20px;
+        background-image: url(medias/search-512.webp);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        background-position: center;
+        position: absolute;
+        background-repeat: no-repeat;
+        content: '';
+
+    } */
+
+    a.loupe {
+        left: 235px;
+    bottom: 18px;
+    }
+
+
+    /* === SECTION SERVICES === */
+
+
     .services {
 
-        flex-direction: column;
-
-        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-wrap: wrap;
 
     }
 
     .section-liens {
 
-        width: 120px;
+        width: 100%;
     }
 
     .link-title {
@@ -817,17 +1034,8 @@ label, #toggle
         width: 100%;
     }
 
-    .recherche .seek input {
-        border: none;
-        border-radius: 5px;
-        padding: 20px 40px;
-        background-color: #FFF;
-        color: #7e7e7e;
-        width: 100%;
-        font-size: 1rem;
-        font-weight: 400;
 
-    }
+/* === SECTION ACTUALITES */
 
     .actualites {
 
@@ -847,21 +1055,6 @@ label, #toggle
         background-image: none;
     }
 
-    .footeradresse{
-        width: 100%;
-        margin-bottom: 2%;
-    }
-        
-    .footerhoraire{
-    width: 100%;
-    margin-bottom: 2%;
-    }
-    
-    a.event-footer{
-    width: 30%;
-    background-color: #405670;
-    }
-
     .section-actus {
         flex-direction: column;
     }
@@ -876,6 +1069,30 @@ label, #toggle
 
     #news {
         height: auto;
+    }
+
+
+    .news {
+
+        flex-direction: column;
+    }
+
+
+    /* === FOOTER === */
+
+    .footeradresse{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+        
+    .footerhoraire{
+    width: 100%;
+    margin-bottom: 2%;
+    }
+    
+    a.event-footer{
+    width: 30%;
+    background-color: #405670;
     }
 
 }

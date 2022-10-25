@@ -13,6 +13,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="shortcut icon" href="medias/logo_bxl.png">
         
         <!-- <link rel="stylesheet" href="normalize.css"> -->
         <link rel="stylesheet" href="style.css">
@@ -90,12 +92,18 @@
 
                         <form action="/recherche" method="get" class="seek">
 
-                            <!-- <label for="search">Recherche</label> -->
+                            <!-- <div style="
+                            position: relative;
+                            
+                            "></div> -->
+
+                            <label id="reche" for="search">Recherche</label>
 
                             <input type="text" name="search" id="search" placeholder="Votre recherche concerne ?">
 
-                            <a href="#" class="loupe"><img class="home-img" src="medias/search-512.webp" alt="loupe recherche"></a>
-                            <!-- <button type="submit" class="loupe"></button> -->
+                            <a href="#" class="loupe"><img class="seek-img" src="medias/search-512.webp" alt="loupe recherche"></a>
+                            
+                            <!-- <button type="submit"></button> -->
 
                         </form>
 
@@ -109,9 +117,9 @@
 
             <section id="services">
 
-                <div class="section-liens">
+                <h2 class="titre-liens">Nos services en 1 clic</h2>
 
-                    <h2 class="titre-liens">Nos services en 1 clic</h2>
+                <div class="section-liens">
 
                     <div class="services">
 
@@ -218,56 +226,88 @@
 
                         <div class="event">
 
-                            <span class="event-picto">
+                            <a href="#">
 
-                                <img src="medias/Festivité_bruxelles.png" alt="Festival Europalia">
+                            <div class="event-picto">
 
-                            </span>
+                                <div class="overlay-image">
+
+                                    <img src="medias/Festivité_bruxelles.png" alt="Festival Europalia">
+
+                                    <div class="hover-image-event">
+                                    
+                                        <p>EN SAVOIR PLUS</p>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
 
                             <h3>Festival Europalia</h3>
 
                             <p class="event-text">Les activités durant ce festival ne manquent pas de variétés. Le théâtre, la danse, le cinéma, la littérature et les conférences scientifiques seront au rendez-vous. Les musées bruxellois prendront part à la festivité avec des expositions....</p>
 
-                            <a href="#" class="event-link">En savoir plus</a>
-
+                            </a>
 
                         </div>
 
                         <div class="event">
 
-                            <span class="event-picto">
+                            <a href="événement.html">
 
-                                <img src="medias/parade_bruxelles-800-530.png" alt="Parade Bruxelles">
+                            <div class="event-picto">
 
-                            </span>
+                                <div class="overlay-image">
+
+                                    <img src="medias/parade_bruxelles-800-530.png" alt="Parade Bruxelles">
+
+                                    <div class="hover-image-event">
+                                    
+                                        <p>EN SAVOIR PLUS</p>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
 
                             <h3>Parade Bruxelles</h3>
 
-                            <p class="event-text">la Zinneke Parade traverse la ville en juillet, c'est l'occasion de revêtir les déguisements les plus délirants..</p>
+                            <p class="event-text">Tous les deux ans, la Zinneke Parade investit le centre de Bruxelles, un spectacle émouvant mettant en scène une vingtaine de projets, développés et soutenus par les Bruxellois.oises, des partenaires et des artistes. La Zinneke Parade, qui a lieu le samedi 14 mai 2022 à 15h, a pour thème "Trompe l’œil"</p>
 
-                            <a href="#" class="event-link">En savoir plus</a>
-
+                            </a>
 
                         </div>
 
                         <div class="event">
 
-                            <span class="event-picto">
+                            <a href="événement.html">
 
-                                <img src="medias/rollerbike-800-530.png" alt="Rollerbike Bruxelles">
+                            <div class="event-picto">
 
-                            </span>
+                                <div class="overlay-image">
+
+                                    <img src="medias/rollerbike-800-530.png" alt="Rollerbike Bruxelles">
+
+                                    <div class="hover-image-event">
+                                    
+                                        <p>EN SAVOIR PLUS</p>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
 
                             <h3>Rollerbike Bruxelles</h3>
 
                             <p class="event-text">Roller Bike Parade du 10 juin au 23 septembre 2022. Chaque vendredi soir, du 10 juin au 23 septembre 2022, Bruxelles reçoit la Roller Bike Parade, des randonnées sportives à suivre à rollers, vélos, skateboards, trottinettes ou longboards. Le départ (à 20h) et l'arrivée se feront depuis la place Poelaert (Palais de Justice).</p>
 
-                            <a href="#" class="event-link">En savoir plus</a>
-
+                            </a>
 
                         </div>
                        
-
                     </div>
 
                     <div id="bouton-actus">
@@ -293,35 +333,7 @@
 
                         <div class="event">
 
-                            <span class="event-picto">
-
-                                <div class="overlay-image">
-
-                                    <img src="medias/octobre-rose.png" alt="image news">
-
-                                    <div class="hover-image">
-                                    
-                                        <h3>Octobre Rose 2022</h3>
-                                    
-                                        <p>Depuis le 10 octobre, la Ville de Bruxelles est officiellement devenue une "Ville Rose". C'est s'engager activement dans la lutte contre le cancer du sein.</p>
-                                    
-                                    </div>
-                                
-                                </div>
-
-                            </span>
-
-                            <div class="event-news">
-
-                                <a href="#">Telechargez ce numéro<img src="medias/icons/adobe.png" class="pdf"></a>
-    
-                            </div>
-
-                        </div>
-
-                        <div class="event">
-
-                            <span class="event-picto">
+                            <div class="event-picto">
 
                                 <div class="overlay-image">
 
@@ -337,11 +349,13 @@
                                 
                                 </div>
 
-                            </span>
+                            </div>
+
+                            <p>le N°39 - Aout 2022</p>
 
                             <div class="event-news">
 
-                                <a href="#">Telechargez ce numéro<img src="medias/icons/adobe.png" class="pdf"></a>
+                                <a href="Mairie_de_Bruxelles.pdf">Telechargez ce numéro<img src="medias/icons/adobe.png" alt="icone pdf" class="pdf"></a>
     
                             </div>
 
@@ -349,7 +363,7 @@
 
                         <div class="event">
 
-                            <span class="event-picto">
+                            <div class="event-picto">
 
                                 <div class="overlay-image">
 
@@ -365,11 +379,43 @@
                                 
                                 </div>
 
-                            </span>
+                            </div>
+
+                            <p>le N°40 - septembre2022</p>
 
                             <div class="event-news">
 
-                                <a href="#">Telechargez ce numéro<img src="medias/icons/adobe.png" class="pdf"></a>
+                                <a href="#">Telechargez ce numéro<img src="medias/icons/adobe.png" alt="icone PDF" class="pdf"></a>
+    
+                            </div>
+
+                        </div>
+
+                        <div class="event">
+
+                            <div class="event-picto">
+
+                                <div class="overlay-image">
+
+                                    <img src="medias/octobre-rose.png" alt="image news">
+
+                                    <div class="hover-image">
+                                    
+                                        <h3>Octobre Rose 2022</h3>
+                                    
+                                        <p>Depuis le 10 octobre, la Ville de Bruxelles est officiellement devenue une "Ville Rose". C'est s'engager activement dans la lutte contre le cancer du sein.</p>
+                                    
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+
+                            <p>le N°41 - Octobre 2022</p>
+
+                            <div class="event-news">
+
+                                <a href="#">Telechargez ce numéro<img src="medias/icons/adobe.png" alt="icone PDF" class="pdf"></a>
     
                             </div>
 
@@ -465,7 +511,7 @@
             </script>
 
 
-<script type="text/javascript" id="cookiebanner" src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.0.0/cookiebanner.min.js" data-position="bottom" data-fg="#ffffff" data-bg="#3c546b" data-link="#fbb52D" data-moreinfo="Mentions_legales.html" data-message="Les cookies assurent le bon fonctionnement de notre site Internet. En utilisant ce dernier, vous acceptez leur utilisation." data-linkmsg="En savoir plus"></script>
+<script id="cookiebanner" src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.0.0/cookiebanner.min.js" data-position="bottom" data-fg="#ffffff" data-bg="#3c546b" data-link="#fbb52D" data-moreinfo="Mentions_legales.html" data-message="Les cookies assurent le bon fonctionnement de notre site Internet. En utilisant ce dernier, vous acceptez leur utilisation." data-linkmsg="En savoir plus"></script>
 
     </body>
 
