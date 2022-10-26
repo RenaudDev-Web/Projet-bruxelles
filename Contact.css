@@ -140,7 +140,6 @@ main .gauche {
 
 main .droite {
   width: 40%;
-  border-width: 50%;
   background: url("medias/mairie2.jpg") no-repeat;
   background-size: contain;
   background-position: center;
