@@ -809,6 +809,9 @@ opacity: 0.75;
 
     /*footer*/
 
+    .footerflex{
+      background-color: #31455d;
+    }
 
     .footeradresse{
       width: 100%;
