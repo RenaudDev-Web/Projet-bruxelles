@@ -15,3 +15,19 @@ Depuis la page d'accueil, les habitants doivent enfin pouvoir accéder au portai
 Le client demande au minimum de réaliser la page d’accueil, mais il apprécierai avoir une page de détail d’un événement et une page de contact.
 
 Dernière chose, le client ne voulait absolument pas voir du Lorem Ipsum, il veut du vrai texte.
+
+
+==========================================
+
+Création des pages (HTML, CSS et Wireframe)
+
+
+Géraldine : pages Demarches, Etat civil. Modification charte graphique.
+
+Julie : pages contact, mentions légales et cookies. Document Marie de Bruxelles PDF.
+
+Sabrina : documents charte graphique, gestion des images et textes et présentation projet bx.ppt.
+
+Florian : pages Evenements, actualité sous page. Vérification des pages.
+
+Renaud (chef de projet) Page d'accueil, Gestion de Trello, gestion du projet et de l'équipe.
