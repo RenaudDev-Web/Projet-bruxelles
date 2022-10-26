@@ -1,3 +1,7 @@
+h1,h2{
+  font-family: 'Oswald', sans-serif;
+}
+
 /* ==== Menu HEADER ===== */
 
 header.sticky {
@@ -66,7 +70,6 @@ nav .main_pages a {
   justify-content: center;
   height: 60px;
   text-decoration: none;
-  /* font-family: "Roboto Slab", serif; */
   font-size: 16px;
   color: white;
 }
@@ -201,7 +204,7 @@ body {
   background-blend-mode: darken;
   color: rgb(8, 8, 8);
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 #envoie {
@@ -238,7 +241,6 @@ footer {
   width: 50%;
   background-color: #31455d;
   color: white;
-  min-height: 30vh;
   padding-bottom: 10px;
 }
 
