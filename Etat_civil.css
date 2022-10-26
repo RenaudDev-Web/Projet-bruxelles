@@ -173,7 +173,7 @@ h5{
 h2{
     font-family: 'roboto';
     font-size: 20px;
-   color: #31455D;
+   color: #ffffff;
 }
 
 .infos{
@@ -385,7 +385,7 @@ opacity: 0.75;
       border-bottom: 1px dotted;
       color: white;
       z-index: 99;
-      top: 0;
+      
 
   }
 
