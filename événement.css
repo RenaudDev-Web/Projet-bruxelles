@@ -3,6 +3,10 @@ body{
   margin: 0;
 }
 
+h1,h2,h3{
+  font-family: 'Oswald', sans-serif;
+}
+
 
 
 header.sticky {
@@ -117,10 +121,13 @@ label, #toggle{
 
 /*Evenements*/
 
+.imagetexte a, .imagetexte1 a, .imagetexte2 a, .imagetexte3 a{
+  text-decoration: none;
+}
+
 #événementh2{
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
   font-size: 2em;
   margin-bottom: 3%;
   margin-top: 3%;
@@ -219,7 +226,8 @@ label, #toggle{
   color: white;
 }
 
-h3{
+#rollerh3, #zinekeh3, #festivalh3, #irish3{
+  text-align: left;
   text-decoration: none;
   color: white;
 }
@@ -228,7 +236,7 @@ h3{
   position: relative;
 }
 
-h3:after {    
+#rollerh3:after, #zinekeh3:after, #festivalh3:after, #irish3:after {    
   background: none repeat scroll 0 0 transparent;
   content: '';
   display: block;
@@ -237,17 +245,18 @@ h3:after {
   background: #fff;
 }
 
-#festivalh3:hover:after { 
-  width: 160px;
-}
-
-#rollerh3:hover:after{
-width: 100px;
+#rollerh3:hover:after { 
+  width: 98px;
 }
 
 #zinekeh3:hover:after{
   width: 140px;
 }
+
+#festivalh3:hover:after{
+width: 160px;
+}
+
 
 #irish3:hover:after{
   width: 110px;
