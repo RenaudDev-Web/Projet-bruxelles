@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 h1,h2{
   font-family: 'Oswald', sans-serif;
 }
@@ -136,7 +140,6 @@ main .gauche {
 
 main .droite {
   width: 40%;
-  border-width: 50%;
   background: url("medias/mairie2.jpg") no-repeat;
   background-size: contain;
   background-position: center;
@@ -219,51 +222,45 @@ body {
 
 /*  Menu FOOTER */
 
-footer ul li a {
-  color: black;
+footer{
+  font-family: 'Roboto Slab', serif;
 }
 
-footer ul li {
-  list-style-type: none;
-}
-
-footer {
-  font-family: "Roboto", sans-serif;
-}
-
-.footerflex {
+.footerflex{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  /* gap: 1px; */
 }
 
-.footeradresse {
+.footeradresse{
+  
   width: 50%;
   background-color: #31455d;
   color: white;
+  /* min-height: 30vh; */
   padding-bottom: 10px;
 }
 
-#footerh2 {
+.footerh2{
+text-align: center;
+}
+
+.footerp{
   text-align: center;
 }
 
-.footerp {
-  text-align: center;
-}
-
-footer a {
+footer a{
   margin: 0 auto;
   display: block;
-  width: 20%;
 }
 
-.footerbutton {
+.footerbutton{
   text-decoration: none;
 }
 
-.footerbutton1 {
+.footerbutton1{
   padding: 10px 50% 10px 14%;
   margin-left: 20%;
   cursor: pointer;
@@ -271,31 +268,48 @@ footer a {
   height: 15%;
 }
 
-.footerbutton1:hover {
-  opacity: 0.75;
+.footerbutton1:hover{
+opacity: 0.75;
 }
 
-.footerhoraire {
+.footerhoraire{
   text-align: center;
   width: 50%;
   align-items: center;
   background-color: #31455d;
-  color: white;
+  color: white;    
+
 }
 
-.footercopyright {
+.footercopyright{
   text-align: center;
   flex: 1;
-  background-color: #fbb52d;
+  background-color:  #fbb52D;
   color: white;
 }
 
-.cookie ul li a {
+.footercopyright li {
+
+  display: inline-block;
+}
+
+.footercopyright a:hover {
   text-decoration: none;
+}
+
+.footercopyright .mentions {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.footercopyright p {
+
   text-align: center;
 }
 
 .event-footer {
+
   background-color: #31455d;
   color: #fff;
   text-decoration: none;
@@ -303,11 +317,13 @@ footer a {
   width: 20%;
   text-align: center;
   box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+
 }
 
 .event-footer:hover {
+
   background-color: #31455d;
-  color: #fbb52d;
+  color: #fbb52D;
   text-decoration: none;
   padding: 14px 15px;
   width: 20%;
@@ -316,6 +332,26 @@ footer a {
 .burger,
 #toggle {
   display: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }
 
 /* ==== Fin Menu FOOTER ===== */
