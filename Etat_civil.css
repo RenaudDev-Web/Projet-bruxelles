@@ -4,6 +4,10 @@ body {
   font-family: 'roboto slab';
 }
 
+h1,h2{
+  font-family: 'Oswald', sans-serif;
+}
+
 header.sticky {
 
   width: 100%;
@@ -132,7 +136,7 @@ label, #toggle
 
 h3{
 font-family: 'roboto slab' serif;
-font-size: 14px;
+font-size: 16px;
 color: #31455D;
 }
 
@@ -165,7 +169,7 @@ a{
 
 h5{
     font-family: 'roboto slab' serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #7e7e7e;
 
 }
@@ -442,9 +446,12 @@ opacity: 0.75;
   color: white;
   margin-left: 41%;
 }
-}
 
-@media screen and (max-width: 480px) {
+/* Footer */
+
+.footerflex{
+  background-color: #31455d;
+}
 
   .footeradresse{
       width: 100%;
@@ -460,5 +467,4 @@ opacity: 0.75;
       width: 30%;
       background-color: #405670;
     }
-
-}
+  }
