@@ -322,6 +322,10 @@ label
 
 /* Footer */
 
+.footerflex{
+  background-color: #31455d;
+}
+
   .footeradresse{
     width: 100%;
     margin-bottom: 2%;
