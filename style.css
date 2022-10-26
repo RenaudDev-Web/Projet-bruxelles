@@ -1010,8 +1010,10 @@ label
     .section-liens {
 
         width: 100%;
+        padding-bottom: 0px;
+        padding-top: 0px;
     }
-
+    
     .link-title {
 
         text-align: center;
