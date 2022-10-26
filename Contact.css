@@ -119,6 +119,7 @@ main .centre {
   line-height: 180%;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 2%;
 }
 
 main .gauche form {
@@ -338,6 +339,9 @@ footer a {
 /* ===== RESPONSIVE ===== */
 
 @media screen and (max-width: 490px) {
+
+  /* Header */
+
   header.sticky {
     width: 100%;
     background: white;
@@ -425,6 +429,12 @@ footer a {
 
   .icons a:hover {
     color: #fbb52d;
+  }
+
+  /* Footer */
+
+  .footerflex{
+    background-color: #31455d;
   }
 
   .footeradresse{
