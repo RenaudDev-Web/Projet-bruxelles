@@ -129,7 +129,7 @@ label, #toggle
 
   .cni{
     font-size: 30px;
-    font-family: 'oswald' sans-serif;
+    font-family: 'oswald', sans-serif;
     background-color: #fbb52d;
     width: 15%;
     color: white;
@@ -139,19 +139,19 @@ label, #toggle
 }
 
 h3{
-font-family: 'roboto slab' serif;
+font-family: 'roboto slab', serif;
 font-size: 16px;
 color: #31455D;
 }
 
 .cni2{
-    font-family: 'roboto slab' serif;
+    font-family: 'roboto slab', serif;
     font-size: 14px;
     color: #7e7e7e;
 }
 
 .cni3{
-    font-family: 'roboto slab' serif;
+    font-family: 'roboto slab', serif;
     font-size: 14px;
     color: #7e7e7e;
 }
@@ -172,26 +172,26 @@ a{
 }
 
 h5{
-    font-family: 'roboto slab' serif;
+    font-family: 'roboto slab', serif;
     font-size: 16px;
     color: #7e7e7e;
 
 }
 
 h6{
-  font-family: 'roboto slab' serif;
+  font-family: 'roboto slab', serif;
     font-size: 20px;
     color: #31455D;
 }
 
 h2{
-    font-family: 'roboto slab' serif;
+    font-family: 'roboto slab', serif;
     font-size: 24px;
    color: #ffffff;
 }
 
 .infos{
-    font-family: 'roboto slab' serif;
+    font-family: 'roboto slab', serif;
     font-size: 20px;
     color: #31455D;
 }
