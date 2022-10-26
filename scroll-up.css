@@ -20,6 +20,10 @@
 
 
   /* 
+
+  html{
+    scroll-behavior: smooth;
+}
   
   A placer entre <body> et <header>
 
