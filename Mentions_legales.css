@@ -283,10 +283,11 @@ opacity: 0.75;
   }
 
   nav .main_pages a {
-    width: 70%;
+    width: 100%;
     background: #5a5766;
     border-bottom: 1px dotted;
     color: white;
+    z-index: 999;
   }
 
   nav .main_pages a:hover {
@@ -431,6 +432,11 @@ footer a {
 @florian */
 
 @media screen and (max-width: 480px) {
+
+  .footerflex{
+    background-color: #31455d;
+  }
+
   .footeradresse {
     width: 100%;
     margin-bottom: 2%;

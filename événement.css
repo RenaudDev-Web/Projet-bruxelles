@@ -523,7 +523,6 @@ footer{
   background-color: #31455d;
   color: white;
   min-height: 30vh;
-  padding-bottom: 10px;
 }
 
 .footerh2{
@@ -674,13 +673,11 @@ opacity: 0.75;
       flex-direction: column;
       background: #31455d;
       height: 220px;
-      padding-bottom: 2%;
-      
   }
 
   nav .main_pages a{
     
-      width: 70%;
+      width: 100%;
       background: #5A5766;
       border-bottom: 1px dotted;
       color: white;
