@@ -1,8 +1,9 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
-h1,h2{
+h1,
+h2 {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -140,7 +141,6 @@ main .gauche {
 
 main .droite {
   width: 40%;
-  border-width: 50%;
   background: url("medias/mairie2.jpg") no-repeat;
   background-size: contain;
   background-position: center;
@@ -204,6 +204,14 @@ main .info:hover {
   background: rgb(100, 100, 98);
 }
 
+#rgpd {
+  text-align: left;
+  width: 70%;
+  margin: auto;
+  margin-left: 14%;
+  padding-bottom: 2%;
+}
+
 body {
   background-size: cover;
   background-blend-mode: darken;
@@ -223,11 +231,11 @@ body {
 
 /*  Menu FOOTER */
 
-footer{
+footer {
   font-family: 'Roboto Slab', serif;
 }
 
-.footerflex{
+.footerflex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -235,8 +243,8 @@ footer{
   /* gap: 1px; */
 }
 
-.footeradresse{
-  
+.footeradresse {
+
   width: 50%;
   background-color: #31455d;
   color: white;
@@ -244,24 +252,24 @@ footer{
   padding-bottom: 10px;
 }
 
-.footerh2{
-text-align: center;
-}
-
-.footerp{
+.footerh2 {
   text-align: center;
 }
 
-footer a{
+.footerp {
+  text-align: center;
+}
+
+footer a {
   margin: 0 auto;
   display: block;
 }
 
-.footerbutton{
+.footerbutton {
   text-decoration: none;
 }
 
-.footerbutton1{
+.footerbutton1 {
   padding: 10px 50% 10px 14%;
   margin-left: 20%;
   cursor: pointer;
@@ -269,23 +277,23 @@ footer a{
   height: 15%;
 }
 
-.footerbutton1:hover{
-opacity: 0.75;
+.footerbutton1:hover {
+  opacity: 0.75;
 }
 
-.footerhoraire{
+.footerhoraire {
   text-align: center;
   width: 50%;
   align-items: center;
   background-color: #31455d;
-  color: white;    
+  color: white;
 
 }
 
-.footercopyright{
+.footercopyright {
   text-align: center;
   flex: 1;
-  background-color:  #fbb52D;
+  background-color: #fbb52D;
   color: white;
 }
 
@@ -330,6 +338,7 @@ opacity: 0.75;
   width: 20%;
   box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
 }
+
 .burger,
 #toggle {
   display: none;
@@ -359,23 +368,22 @@ opacity: 0.75;
 
 /* ==== MEDIAS QUERIES ===== */
 
+/* ===== RESPONSIVE ===== */
+
 @media screen and (max-width: 490px) {
   .droite {
     display: none;
   }
+
   main .gauche {
     width: 100%;
     margin-bottom: 20px;
   }
+
   main .centre {
     width: 100%;
     flex-basis: 100%;
   }
-}
-
-/* ===== RESPONSIVE ===== */
-
-@media screen and (max-width: 490px) {
 
   /* Header */
 
@@ -448,7 +456,7 @@ opacity: 0.75;
     cursor: pointer;
   }
 
-  #toggle:checked + .main_pages {
+  #toggle:checked+.main_pages {
     display: flex;
   }
 
@@ -468,27 +476,30 @@ opacity: 0.75;
     color: #fbb52d;
   }
 
+  #rgpd {
+    padding-bottom: 8%;
+  }
+
   /* Footer */
 
-  .footerflex{
+  .footerflex {
     background-color: #31455d;
   }
 
-  .footeradresse{
+  .footeradresse {
     width: 100%;
     margin-bottom: 2%;
   }
-  
-  .footerhoraire{
+
+  .footerhoraire {
     width: 100%;
     margin-bottom: 2%;
   }
-  
-  a.event-footer{
+
+  a.event-footer {
     width: 30%;
     background-color: #405670;
   }
-
 }
 
 /* ====FIN MEDIAS QUERIES ===== */
