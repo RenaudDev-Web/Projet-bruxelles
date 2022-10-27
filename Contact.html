@@ -1,231 +1,194 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="shortcut icon" href="medias/logo_bxl.png">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab&display=swap" rel="stylesheet">
 
-    <title>Contactez nous</title>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="medias/logo_bxl.png">
 
-  <body>
+  <title>Contactez nous</title>
+</head>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<body>
 
-    <header class="sticky">
-      <div id="head-wrap">
-        <div class="wrap">
-          <a class="logo" href="index.html">
-            <img
-              class="img-logo"
-              src="medias/logo_bx.png"
-              alt="logo brussels"
-            >
-          </a>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-          <div class="bienvenue">
-            <p class="p-bienvenue">Bienvenue, Welkom, Welcome</p>
-          </div>
-
-          <div class="icons">
-            <a
-              href="https://www.instagram.com/bxl_online/"
-              class="fa fa-instagram"
-            ></a>
-            <a
-              href="https://www.facebook.com/BXLvilledebruxelles/"
-              class="fa fa-facebook"
-            ></a>
-            <a
-              href="https://twitter.com/VilleBruxelles"
-              class="fa fa-twitter"
-            ></a>
-          </div>
-        </div>
-      </div>
-
-      <nav>
-        <label class="burger" for="toggle">☰</label>
-
-        <input type="checkbox" id="toggle" >
-
-        <div class="main_pages">
-          <a href="demarche.html">Mes demarches</a>
-          <a href="événement.html">Culture</a>
-          <a href="#">Ma ville</a>
-          <a href="#">Brussels 2035</a>
-          <a href="#">Je participe</a>
-          <a href="Contact.html">Contact</a>
-        </div>
-      </nav>
-    </header>
-
-    <main>
+  <header class="sticky">
+    <div id="head-wrap">
       <div class="wrap">
-        <div class="centre">
-          <h1>Nous contacter</h1>
-          <p>Vous avez plusieurs possibilité afin de nous contacter :</p>
-          <a href="tel:0253593017" class="info">Info Mairie</a>
-          <a href="mailto:contact@bruxelles.be" class="info"
-            >Adresse email Mairie</a
-          >
-          <p>
-            Vous pouvez également envoyer un courrier à l'adresse suivante :
-          </p>
-          <p>
-            Hôtel de Ville Bruxelles,<br >
-            Grand-Place-1000 Bruxelles <br >
-          </p>
+        <a class="logo" href="index.html">
+          <img class="img-logo" src="medias/logo_bx.png" alt="logo brussels">
+        </a>
+
+        <div class="bienvenue">
+          <p class="p-bienvenue">Bienvenue, Welkom, Welcome</p>
         </div>
 
-        <div class="centre">
-          <h2>Formulaire de contact</h2>
-
-          <p>
-            Pour toute réclamation ou demande spécifique, vous pouvez également
-            nous contacter via le formulaire de contact ci dessous:
-          </p>
+        <div class="icons">
+          <a href="https://www.instagram.com/bxl_online/" class="fa fa-instagram"></a>
+          <a href="https://www.facebook.com/BXLvilledebruxelles/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/VilleBruxelles" class="fa fa-twitter"></a>
         </div>
-        <div class="gauche">
-          <form method="post">
-            <label for="prenom">Prénom</label>
-            <input
-              type="text"
-              id="prenom"
-              name="prenom"
-              class="input"
-              placeholder="Entrez votre prénom"
-              maxlength="300"
-            >
-
-            <label for="name" class="label">Nom</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="input"
-              placeholder="Entrez votre nom"
-              maxlength="300"
-            >
-            <label for="email" class="label">E-mail</label>
-            <input
-              type="email"
-              name="Email"
-              id="email"
-              class="input"
-              placeholder="Entrez votre Email"
-              required
-            >
-            <label for="demande" class="input"
-              >Quel type de demande avez-vous ?</label
-            >
-            <select name="role" id="demande" class="input">
-              <option value="0">Conseillers communaux</option>
-              <option value="1">Secrétaire communal</option>
-              <option value="2">Départements administratifs</option>
-            </select>
-            <label for="comment" class="label">Commentaires : </label>
-            <textarea
-              name="comment"
-              id="comment"
-              class="input"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <input id="envoie" type="submit" value="Envoyer" name="Envoyer">
-          </form>
-        </div>
-
-        <div class="droite"></div>
       </div>
-    </main>
+    </div>
 
-    <footer>
+    <nav>
+      <label class="burger" for="toggle">☰</label>
 
-      <div class="footerflex">
-          
-          <div class="footeradresse">
-      
-              <h2 class="footerh2">Adresse</h2>
-      
-              <div class="footerp">
-  
-                  <p>Hotel de Ville-Grand-Place-1000 Bruxelles</p>
-  
-                  <p>Centre administratif-Boulevard Anspach 6-1000 Bruxelles</p>
-  
-                  <p>+32 2 279 23 43</p>
-  
-              </div>
-      
-              <a href="#" class="event-footer">En savoir plus</a>
-  
-          </div>
-      
-          <div class="footerhoraire">
-              
-              <h2 class="footerh2">Horaires</h2>
-  
-                  <p>Lundi : 8h30-12h30 / 13h30-17h00</p>
-  
-                  <p>Mardi : 8h30-12h30 / 13h30-17h00</p>
-  
-                  <p>Mercredi : 8h30-12h30 / 13h30-17h00</p>
-  
-                  <p>Jeudi : 8h30-12h30 / 13h30-17h00</p>
-  
-                  <p>Vendredi : 8h30-12h30 / 13h30-17h00</p>
-  
-          </div>
-  
-          <div class="footercopyright">
-  
-              <ul>
-  
-                  <li>Copyright 2022 Ville de Bruxelles</li>
-  
-                  <li><a href="Mentions_legales.html" class="mentions">Mentions légales</a></li>
-  
-                  <li><a href="Cookie.html" class="mentions">Gestion des cookies</a></li>
-              
-              </ul>
-  
-          </div>
-  
+      <input type="checkbox" id="toggle">
+
+      <div class="main_pages">
+        <a href="demarche.html">Mes demarches</a>
+        <a href="événement.html">Culture</a>
+        <a href="#">Ma ville</a>
+        <a href="#">Brussels 2035</a>
+        <a href="#">Je participe</a>
+        <a href="Contact.html">Contact</a>
       </div>
-  
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="centre">
+        <h1>Nous contacter</h1>
+        <p>Vous avez plusieurs possibilité afin de nous contacter :</p>
+        <a href="tel:0253593017" class="info">Info Mairie</a>
+        <a href="mailto:contact@bruxelles.be" class="info">Adresse email Mairie</a>
+        <p>
+          Vous pouvez également envoyer un courrier à l'adresse suivante :
+        </p>
+        <p>
+          Hôtel de Ville Bruxelles,<br>
+          Grand-Place-1000 Bruxelles <br>
+        </p>
+      </div>
+
+      <div class="centre">
+        <h2>Formulaire de contact</h2>
+
+        <p>
+          Pour toute réclamation ou demande spécifique, vous pouvez également
+          nous contacter via le formulaire de contact ci dessous:
+        </p>
+      </div>
+      <div class="gauche">
+        <form method="post">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" class="input" placeholder="Entrez votre prénom" maxlength="300">
+
+          <label for="name" class="label">Nom</label>
+          <input type="text" id="name" name="name" class="input" placeholder="Entrez votre nom" maxlength="300">
+          <label for="email" class="label">E-mail</label>
+          <input type="email" name="Email" id="email" class="input" placeholder="Entrez votre Email" required>
+          <label for="demande" class="input">Quel type de demande avez-vous ?</label>
+          <select name="role" id="demande" class="input">
+            <option value="0">Conseillers communaux</option>
+            <option value="1">Secrétaire communal</option>
+            <option value="2">Départements administratifs</option>
+          </select>
+          <label for="comment" class="label">Commentaires : </label>
+          <textarea name="comment" id="comment" class="input" cols="30" rows="10"></textarea>
+          <input id="envoie" type="submit" value="Envoyer" name="Envoyer">
+        </form>
+      </div>
+
+      <div class="droite"></div>
+    </div>
+  </main>
+
+  <p id="rgpd">Au-delà de l'utilisation des cookies, le propriétaire du présent site effectue de
+    multiples traitements de données à caractère personnel soumis au règlement général sur la protection des données
+    (RGPD), dont certains peuvent être initiés par les personnes concernées à l'occasion de leur utilisation du présent
+    site.</p>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <div class="footerflex">
+
+      <div class="footeradresse">
+
+        <h2 class="footerh2">Adresse</h2>
+
+        <div class="footerp">
+
+          <p>Hotel de Ville-Grand-Place-1000 Bruxelles</p>
+
+          <p>Centre administratif-Boulevard Anspach 6-1000 Bruxelles</p>
+
+          <p>+32 2 279 23 43</p>
+
+        </div>
+
+        <a href="#" class="event-footer">En savoir plus</a>
+
+      </div>
+
+      <div class="footerhoraire">
+
+        <h2 class="footerh2">Horaires</h2>
+
+        <p>Lundi : 8h30-12h30 / 13h30-17h00</p>
+
+        <p>Mardi : 8h30-12h30 / 13h30-17h00</p>
+
+        <p>Mercredi : 8h30-12h30 / 13h30-17h00</p>
+
+        <p>Jeudi : 8h30-12h30 / 13h30-17h00</p>
+
+        <p>Vendredi : 8h30-12h30 / 13h30-17h00</p>
+
+      </div>
+
+      <div class="footercopyright">
+
+        <ul>
+
+          <li>Copyright 2022 Ville de Bruxelles</li>
+
+          <li><a href="Mentions_legales.html" class="mentions">Mentions légales</a></li>
+
+          <li><a href="Cookie.html" class="mentions">Gestion des cookies</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
   </footer>
 
-    <script>
-      // Get the button
-      let mybutton = document.getElementById("myBtn");
-      
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
       }
-      
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-      </script>
-      
-  </body>
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+
 </html>

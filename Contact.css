@@ -204,6 +204,14 @@ main .info:hover {
   background: rgb(100, 100, 98);
 }
 
+#rgpd {
+  text-align: left;
+  width: 70%;
+  margin: auto;
+  margin-left: 14%;
+  padding-bottom: 2%;
+}
+
 body {
   background-size: cover;
   background-blend-mode: darken;
@@ -466,6 +474,10 @@ footer a {
 
   .icons a:hover {
     color: #fbb52d;
+  }
+
+  #rgpd {
+    padding-bottom: 8%;
   }
 
   /* Footer */
