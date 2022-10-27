@@ -60,7 +60,6 @@ header #head-wrap .wrap {
 
 }
 
-
 nav {
   /* margin: 100px auto; */
   width: 100%;
@@ -113,11 +112,6 @@ label,
 #toggle {
   display: none;
 }
-
-
-
-
-
 
 body {
   font-family: 'Roboto Slab', serif;
