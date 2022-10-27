@@ -113,18 +113,20 @@ main h1 {
   color: #31455d;
 }
 
+.text {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 main h2 {
   color: #31455d;
 }
 
 main .centre {
-  width: 50%;
-  flex-basis: 58%;
   padding: 0 1% 0 0.5%;
   line-height: 180%;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 2%;
 }
 
 main .gauche form {
@@ -140,11 +142,12 @@ main .gauche {
 }
 
 main .droite {
-  width: 40%;
-  background: url("medias/mairie2.jpg") no-repeat;
   background-size: contain;
   background-position: center;
+
 }
+
+
 
 main .label {
   text-align: left;
@@ -206,9 +209,8 @@ main .info:hover {
 
 #rgpd {
   text-align: left;
-  width: 70%;
+  width: 75%;
   margin: auto;
-  margin-left: 14%;
   padding-bottom: 2%;
 }
 
@@ -372,7 +374,12 @@ footer a {
 
 @media screen and (max-width: 490px) {
   .droite {
-    display: none;
+    width: 80%;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
   }
 
   main .gauche {
